@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img id="logo" src="svg/logo.svg">
+            <h1 id="company-name">Stroymep</h1>
+        </div>
+        <ul class="nav-right" >
+            <li><a href="#">home</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+          
+        <div class="burger" onclick="ToggleBurger(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>    
+    <div class="hero">
+        <div class="welcome-text">
+            <p>We are a<br>
+                <span style="color:#0000AD">Team of Experts </span><br>
+                in mep <br>engineering.</p>
+        </div>
+        <div class="welcome-images">
+            <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img src="img/1.jpg" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img src="img/2.png" alt="song">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img src="img/3.jpg" alt="song">
+            </label>
+          </div>
+          <div class="player">
+            <div class="upper-part">
+              <div class="play-icon">
+                <img src=svg/location.svg>
+              </div>
+              <div class="info-area" id="test">
+                <label class="song-info" id="song-info-1">
+                  <div class="title">Expo Center</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Nur-Sultan</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-2">
+                  <div class="title">Words Remain</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Moderator</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-3">
+                  <div class="title">Falling Out</div>
+                  <div class="sub-line">
+                    <div class="subtitle">Otzeki</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var menu_open = False;
+        function ToggleBurger(x) {
+            const line1 = document.querySelector('.line1');
+            const line2 = document.querySelector('.line2');
+            const line3 = document.querySelector('.line3');
+            const nav_right = document.querySelector('.nav-right');
+            const burger = document.querySelector('.burger');
+            
+            if(!menu_open)
+            {
+                line1.classList.add('change');
+                line2.classList.add('change');
+                line3.classList.add('change');
+                nav_right.classList.add('open');
+                menu_open=true;
+            }
+            else
+            {
+                line1.classList.remove('change');
+                line2.classList.remove('change');
+                line3.classList.remove('change');
+                nav_right.classList.remove('open');
+                menu_open=false;
+            }
+        }
+    </script>
+</body>
+</html>
