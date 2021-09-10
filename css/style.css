@@ -19,9 +19,9 @@ body {
 /*HEADER*/
 
 #company-name {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans';
     font-size: 18px;
-    font-weight: 800;
+    font-weight: bold;
     top: 10px;
     left: 15px;
     line-height: 23px;
@@ -36,6 +36,7 @@ body {
 }
 
 nav {
+    margin-top: 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,6 +171,7 @@ img {
   border-radius: 10px;
   object-fit: cover;
 }
+
 #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
   transform: translatex(-40%) scale(0.8);
   opacity: 0.4;
@@ -268,12 +270,14 @@ img {
     align-items: center;
   }
   .welcome-text{
+    font-size: 42px;
     width: 100%;
-    padding-left: 32px;
+    padding-left: 18px;
   }
   .welcome-images{
+    margin-top: 64px;
     width: 100%;
-    padding-left: 32px;
+    padding-left: 0;
   }
     .nav-right {
         position: absolute;

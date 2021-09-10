@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ico/stroymep.ico?v=v1">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="ico/stroymep.ico?v=v1">
+	<link rel="icon" type="image/png" sizes="196x196" href="ico/stroymep-192.png?v=v1">
+	<link rel="icon" type="image/png" sizes="160x160" href="ico/stroymep-160.png?v=v1">
+	<link rel="icon" type="image/png" sizes="96x96" href="ico/stroymep-96.png?v=v1">
+	<link rel="icon" type="image/png" sizes="64x64" href="ico/stroymep-64.png?v=v1">
+	<link rel="icon" type="image/png" sizes="32x32" href="ico/stroymep-32.png?v=v1">
+	<link rel="icon" type="image/png" sizes="16x16" href="ico/stroymep-16.png?v=v1">
+	<link rel="apple-touch-icon" href="ico/stroymep-57.png?v=v1">
+	<link rel="apple-touch-icon" sizes="114x114" href="ico/stroymep-114.png?v=v1">
+	<link rel="apple-touch-icon" sizes="72x72" href="ico/stroymep-72.png?v=v1">
+	<link rel="apple-touch-icon" sizes="144x144" href="ico/stroymep-144.png?v=v1">
+	<link rel="apple-touch-icon" sizes="60x60" href="ico/stroymep-60.png?v=v1">
+	<link rel="apple-touch-icon" sizes="120x120" href="ico/stroymep-120.png?v=v1">
+	<link rel="apple-touch-icon" sizes="76x76" href="ico/stroymep-76.png?v=v1">
+	<link rel="apple-touch-icon" sizes="152x152" href="ico/stroymep-152.png?v=v1">
+	<link rel="apple-touch-icon" sizes="180x180" href="ico/stroymep-180.png?v=v1">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="ico/stroymep-144.png?v=v1">
+	<meta name="msapplication-config" content="ico/browserconfig.xml">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Stroymep - Home </title>
 </head>
 
 <body>
@@ -43,13 +63,13 @@
             <input type="radio" name="slider" id="item-3">
           <div class="cards">
             <label class="card" for="item-1" id="song-1">
-              <img src="img/1.jpg" alt="song">
+              <img src="img/yda-nursultan.jpg" alt="song" id='img1'>
             </label>
             <label class="card" for="item-2" id="song-2">
-              <img src="img/2.png" alt="song">
+              <img src="img/Hospital.jpg" alt="song" id='img2'>
             </label>
             <label class="card" for="item-3" id="song-3">
-              <img src="img/3.jpg" alt="song">
+              <img src="img/museum.jpeg" alt="song" id='img3'>
             </label>
           </div>
           <div class="player">
@@ -59,21 +79,21 @@
               </div>
               <div class="info-area" id="test">
                 <label class="song-info" id="song-info-1">
-                  <div class="title">Expo Center</div>
+                  <div class="title">Nur-Sultan City Hospital</div>
                   <div class="sub-line">
-                    <div class="subtitle">Nur-Sultan</div>
+                    <div class="subtitle">Nur-Sultan, Kazakhstan</div>
                   </div>
                 </label>
                 <label class="song-info" id="song-info-2">
-                  <div class="title">Words Remain</div>
+                  <div class="title">City Hospital</div>
                   <div class="sub-line">
-                    <div class="subtitle">Moderator</div>
+                    <div class="subtitle">Turkestan, Kazakhstan</div>
                   </div>
                 </label>
                 <label class="song-info" id="song-info-3">
-                  <div class="title">Falling Out</div>
+                  <div class="title">Ahmad Yassawi Museum</div>
                   <div class="sub-line">
-                    <div class="subtitle">Otzeki</div>
+                    <div class="subtitle">Turkestan, Kazakhstan</div>
                   </div>
                 </label>
               </div>
@@ -83,7 +103,6 @@
         </div>
     </div>
     <script>
-
         var menu_open = False;
         function ToggleBurger(x) {
             const line1 = document.querySelector('.line1');
