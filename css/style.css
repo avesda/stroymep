@@ -315,10 +315,6 @@ img {
 /* ipads */
 @media screen and (max-width: 992px) {
 
-  body {
-    background-color: khaki;
-  }
-
   nav{
     padding-left: 18px;
   }
@@ -362,16 +358,12 @@ img {
     width:70%;
     height:inherit;
     margin-left: -60px;
-    margin-top: -130px;/
+    margin-top: -130px;
   }
 }
 
 /* phones */
 @media screen and (max-width: 576px) {
-  body {
-    background-color: lightgreen;
-  }
-  
   .hero{
     align-items: center;
   }
