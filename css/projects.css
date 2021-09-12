@@ -316,85 +316,82 @@ nav {
   /*RESPONSIVE*/
 
 @media screen and (max-width: 992px) {
+  nav{
+    padding-left: 18px;
+  }
+  .cards{
+    display: block;
+  }
+  .card{
+    margin: 0 auto;
+    zoom: 1.5;
+  }
+}
+  
+@media screen and (max-width: 576px) {
+  .nav-right {
+      position: absolute;
+      right: 0px;
+      flex-direction: column;
+      top: 8vh;
+      text-align: right;
+      right: 19px;
+      display: none;
+  }
 
-    nav{
-      padding-left: 18px;
-    }
-    .cards{
+  .nav-right > li {
+      margin-right: 0px;
+      margin-top: 5px;
+  }
+  .burger {
       display: block;
-    }
-    .card{
-      margin: 0 auto;
-      zoom: 1.5;
-    }
+      margin-right: 19px;
+      cursor: pointer;
+  }
+  .nav-right.open {
+      display: block;
+  }
+  #heading{
+    padding-left: 32px;
+    font-size: 36px;
+  }
+  .card{
+    zoom: 0.85;
+    grid-column: 1;
   }
   
-  @media screen and (max-width: 576px) {
-  
-  
-      .nav-right {
-          position: absolute;
-          right: 0px;
-          flex-direction: column;
-          top: 8vh;
-          text-align: right;
-          right: 19px;
-          display: none;
-      }
-  
-      .nav-right > li {
-          margin-right: 0px;
-          margin-top: 5px;
-      }
-      .burger {
-          display: block;
-          margin-right: 19px;
-          cursor: pointer;
-      }
-      .nav-right.open {
-          display: block;
-      }
-      #heading{
-        padding-left: 32px;
-        font-size: 36px;
-      }
-      .card{
-        zoom: 0.85;
-        grid-column: 1;
-      }
-      
-  }
+}
 
 
   /*Footer*/
 
-  .footer-container
-  {
-    margin: 48px auto;
-    width: calc(100%-64px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    position: relative;
-  }
+.footer-container
+{
+  margin: 48px auto;
+  width: calc(100%-64px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  position: relative;
+}
 
-  .footer-logo
-  {
-    width: 10%;
-    position: absolute;
-    margin: 6px 64px;
-  }
+.footer-logo
+{
+  width: 10%;
+  position: absolute;
+  margin: 6px 64px;
+}
 
-  .footer-company-name{
-    text-align: end;
-    position: absolute;
-    width:90%;
-  }
-  .footer-company-name-h2{
-    font-family: 'IBM Plex Sans';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 131.19%;
-  }
+.footer-company-name{
+  text-align: end;
+  position: absolute;
+  width:90%;
+}
+.footer-company-name-h2{
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 131.19%;
+}

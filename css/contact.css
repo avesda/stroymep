@@ -10,7 +10,6 @@ body {
     font-size: 16px;
     color: black; 
     height:100%;
-
     animation: bugfix infinite 1s;
     -webkit-animation: bugfix infinite 1s;
 }
@@ -109,6 +108,11 @@ body {
     padding-bottom:40%;
     position:relative;
     height:0;
+    width: calc(100%-64px);
+    max-width: 1110px;
+    margin: 100px auto;
+    position: relative;
+    padding-left: 72px;
 }
 
 #map-responsive iframe{
@@ -118,6 +122,74 @@ body {
     width:100%;
     position:absolute;
 }
+/* map ends */
+
+/* socials starts */
+#socials {
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    width: calc(100%-64px);
+    max-width: 1110px;
+    margin: 100px auto;
+    height: auto;
+    position: relative;
+    padding-bottom: 15px;
+    padding-left: 72px;
+}
+
+#socials > div {
+    padding: 50px;
+    text-align: left;
+}
+
+i {
+    font-size: 40px;
+    color: #005CB9;
+    padding: 10px;
+}
+
+.black {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
+    color: black;
+    font-size: 24px;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+/* socials ends */
+
+/* footer starts */
+.footer-container
+{
+  margin: 48px auto;
+  width: calc(100%-64px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  position: relative;
+}
+
+.footer-logo
+{
+  width: 10%;
+  position: absolute;
+  margin: 6px 64px;
+}
+
+.footer-company-name{
+  text-align: end;
+  position: absolute;
+  width:90%;
+}
+.footer-company-name-h2{
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 131.19%;
+}
+/* footer ends */
 
 /*RESPONSIVE*/
 

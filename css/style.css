@@ -405,6 +405,7 @@ img {
   position: relative;
   margin-left: 130px;
   text-align: center;
+  margin-top: -46px;
 }
 
 #service-text {
@@ -413,6 +414,7 @@ img {
   text-align: center;
 }
 /* service ends */
+
 
 
 
@@ -529,6 +531,7 @@ img {
     position: relative;
     text-align: center;
     margin-left: 54px;
+    margin-top: 0;
   }
 
   #service-text {
