@@ -325,7 +325,7 @@ img {
 
 .text{
   text-align: center;
-  font-family: IBM Plex Sans;
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -384,6 +384,33 @@ img {
 }
 /* about-us ends */
 
+/* service starts */
+#service-container {
+  width: calc(100%-64px);
+  max-width: 1110px;
+  margin: 35px auto;
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#service-button {
+  position: relative;
+  margin-left: 130px;
+  text-align: center;
+}
+
+#service-text {
+  position: relative;
+  margin-right: 105px;
+  text-align: center;
+}
+/* service ends */
+
+
 
 /*RESPONSIVE*/
 
@@ -425,13 +452,13 @@ img {
   .left {
     width: 30%;
     height:inherit;
-    margin-left: 50px;    
+    margin-left: 54px;    
   }
 
   .right {
     width:70%;
     height:inherit;
-    margin-left: -60px;
+    margin-left: -54px;   /* maybe 60 */
     margin-top: -130px;
   }
 
@@ -439,7 +466,7 @@ img {
     width: calc(100%-64px);
     max-width: 1110px;
     margin: 10px auto;
-    margin-top: -250px;
+    margin-top: -300px;
     height: auto;
     position: relative;
     display: block;
@@ -480,6 +507,31 @@ img {
     height:inherit;
     margin-right: 270px;
     text-align: left;
+  }
+
+  #service-container {
+    width: calc(100%-64px);
+    max-width: 1110px;
+    margin: 35px auto;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  #service-button {
+    position: relative;
+    text-align: center;
+    margin-left: 54px;
+  }
+
+  #service-text {
+    position: relative;
+    text-align: center;
+    padding-left: 54px;
+    margin-top: -86px;
   }
 }
 
@@ -546,14 +598,14 @@ img {
     width: 90%;
     height:inherit;
     margin-left: 30px;
-
+    text-align: left;
   }
 
   #about-us-container {
     width: calc(100%-64px);
     max-width: 1110px;
     margin: 10px auto;
-    margin-top: -250px;
+    margin-top: -325px;
     height: auto;
     position: relative;
     display: block;
@@ -593,6 +645,33 @@ img {
     position: relative;
     height:inherit;
     margin-right: 80px;
+    text-align: left;
+  }
+
+  #service-container {
+    width: calc(100%-64px);
+    max-width: 1110px;
+    margin: 35px auto;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  #service-button {
+    position: relative;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+
+  #service-text {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-left: 30px;
     text-align: left;
   }
 }
