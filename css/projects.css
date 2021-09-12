@@ -1,0 +1,400 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'IBM Plex Sans','raleway';
+    font-style: normal;
+    font-size: 16px;
+    color: black; 
+    height:100%;
+
+    animation: bugfix infinite 1s;
+    -webkit-animation: bugfix infinite 1s;
+}
+
+/*Main*/
+
+/*CARD*/
+
+.cards{
+    
+    max-width: 1100px;
+    margin: 36px auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    height: 351px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    place-self: center;
+    zoom:1.1;
+}
+
+.boxframe {
+
+    position: absolute;
+    border: 1px solid #000000;
+    z-index: 0;
+    width: 350px;
+    height: 300px;
+    margin: 36px auto;
+
+}
+
+#project-name {
+    z-index: 1;
+    margin: 10px 0;
+    padding-left: -16px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+    color: #000000;
+    position: absolute;
+    left: 54px;
+}
+
+.project-image{
+    margin: 54px auto;
+    width: 380px;
+    height: 232px;
+    z-index: 2;
+    position: absolute;
+}
+
+#img-project
+{
+    width: 380px;
+    height: 232px;
+}
+
+.sub-text{
+    position: absolute;
+    justify-content: end;
+    bottom: 22px;
+    right: 42px;
+}
+
+.status {
+    font-family: 'IBM Plex Sans';
+    text-align: end;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.subtitle {
+    font-family: 'IBM Plex Sans';
+    text-align: end;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #5C5C5C;
+}
+
+
+
+
+#heading {
+    padding-left: 94px;
+    margin: 36px auto;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 62px;
+    position: relative;
+    color: #000000;
+}
+
+main{
+    
+    max-width: 1100px;
+    width: calc(100%-64px);
+    margin: 0 auto;
+    
+}
+
+
+/*HEADER*/
+
+#company-name {
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: bold;
+    top: 10px;
+    left: 15px;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    top: 18px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.header{
+  
+  top:0;
+  position: sticky;
+  z-index: 5;
+}
+
+nav {
+    margin: 6px auto;
+    width: calc(100%-64px);
+    max-width: 1100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right{
+    margin-top: 8px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-right > li {
+    margin-right: 19px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.nav-right > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.nav-right > li > a:hover {
+  color: #005CB9;
+}
+
+
+.burger {
+    margin-top: 8px;
+    display: none;
+}
+
+.burger div{
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 12px;
+    transition: 0.1s;
+}
+
+.line1.change {
+    transform: rotate(135deg) translate(7px,-5px);
+}
+
+.line2.change {
+    transform: rotate(45deg);
+}
+
+.line3.change  {
+    opacity: 0;
+}
+
+
+/*SLIDER*/
+
+.slider {
+
+    border-radius: 8px;
+    width: 380px;
+    height: 232px;
+  }
+  
+  .wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #items {
+    width: 10000px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  #items.shifting {
+    transition: left .2s ease-out;
+  }
+  
+  .slide {
+    width: 380px;
+    height: 232px;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+    background:transparent;
+  }
+
+
+  /*Controls*/
+
+  .slider-controls {
+      width: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      bottom: 62px;
+      left:10px;
+      position: absolute;
+  }
+
+
+  .control {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    z-index: 2;
+  }
+  
+  .prev,
+  .next {
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  .prev {
+    background-image: url(../ico/left-chevron.png);
+    left: 50px;
+  }
+  
+  .next {
+    background-image: url(../ico/right-chevron.png);
+    left: 120px;
+  }
+  
+  .prev:active,
+  .next:active {
+    transform: scale(0.8);
+  }
+
+
+  /*RESPONSIVE*/
+
+@media screen and (max-width: 992px) {
+
+    nav{
+      padding-left: 18px;
+    }
+    .cards{
+      display: block;
+    }
+    .card{
+      margin: 0 auto;
+      zoom: 1.5;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+  
+  
+      .nav-right {
+          position: absolute;
+          right: 0px;
+          flex-direction: column;
+          top: 8vh;
+          text-align: right;
+          right: 19px;
+          display: none;
+      }
+  
+      .nav-right > li {
+          margin-right: 0px;
+          margin-top: 5px;
+      }
+      .burger {
+          display: block;
+          margin-right: 19px;
+          cursor: pointer;
+      }
+      .nav-right.open {
+          display: block;
+      }
+      #heading{
+        padding-left: 32px;
+        font-size: 36px;
+      }
+      .card{
+        zoom: 0.85;
+        grid-column: 1;
+      }
+      
+  }
+
+
+  /*Footer*/
+
+  .footer-container
+  {
+    margin: 48px auto;
+    width: calc(100%-64px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    position: relative;
+  }
+
+  .footer-logo
+  {
+    width: 10%;
+    position: absolute;
+    margin: 6px 64px;
+  }
+
+  .footer-company-name{
+    text-align: end;
+    position: absolute;
+    width:90%;
+  }
+  .footer-company-name-h2{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 131.19%;
+  }
