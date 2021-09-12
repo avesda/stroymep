@@ -1,80 +1,87 @@
 *{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
 
 }
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    color: black; 
-    height:100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: black; 
+  height:100%;
 
-    animation: bugfix infinite 1s;
-    -webkit-animation: bugfix infinite 1s;
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
 }
 
-/*HEADER*/
+.highlight-blue {
+  color: #0000AD;
+}
 
+/* nav starts */
 #company-name {
-    font-family: 'IBM Plex Sans';
-    font-size: 18px;
-    font-weight: bold;
-    top: 10px;
-    left: 15px;
-    line-height: 23px;
-    cursor: pointer;
+
+  font-family: 'IBM Plex Sans';
+  font-size: 18px;
+  font-weight: bold;
+  top: 10px;
+  left: 15px;
+  line-height: 23px;
+  cursor: pointer;
 }
 
 #logo {
-    width: 100%;
-    height: 100%;
-    top: 18px;
-    right: 18px;
-    cursor: pointer;
-
+  width: 100%;
+  height: 100%;
+  top: 18px;
+  right: 18px;
+  cursor: pointer;
 }
 
 nav {
-    margin: 6px auto;
-    width: calc(100%-64px);
-    max-width: 1110px;
-    position: relative;
-    padding-left: 64px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 8vh;
-    background-color: rgb(255, 255, 255);
+  margin: 6px auto;
+  width: calc(100%-64px);
+  max-width: 1110px;
+  position: relative;
+  padding-left: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(255, 255, 255);
 
 }
 
 .nav-left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-right{
-    margin-top: 8px;
-    margin-right: 20px;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 8px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-right > li {
-    margin-right: 19px;
-    text-decoration: none;
-    list-style: none;
+  margin-right: 19px;
+  text-decoration: none;
+  list-style: none;
 
 }
 
 .nav-right > li > a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.nav-right > li > a:hover {
+  color: #005CB9;
 }
 
 .nav-right > li > a:hover {
@@ -82,97 +89,32 @@ nav {
 }
 
 .burger {
-    margin-top: 8px;
-    display: none;
+  margin-top: 8px;
+  display: none;
 }
 
 .burger div{
-    width: 30px;
-    height: 2px;
-    background-color: #333;
-    margin: 6px 12px;
-    transition: 0.1s;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  margin: 6px 12px;
+  transition: 0.1s;
 }
 
 .line1.change {
-    transform: rotate(135deg) translate(7px,-5px);
+  transform: rotate(135deg) translate(7px,-5px);
 }
 
 .line2.change {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .line3.change  {
-    opacity: 0;
+  opacity: 0;
 }
+/* nav ends */
 
-/*
-MAIN
-*/
-
-
-
-.button-container{
-
-  width: calc(100%-64px);
-  max-width: 1110px;
-  margin: -55px auto;
-  height: 50px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.left {
-  position: relative;
-  width: 30%;
-  height:inherit;
-  margin-left: 130px;
-  text-align: center;
-  
-}
-
-.right {
-  position: relative;
-  width:70%;
-  height:inherit;
-  margin-right: 150px;
-  text-align: center;
-}
-
-.button{
-  font-family: IBM Plex Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 131.19%;
-
-  color: #FFFFFF;
-  cursor: pointer;
-  text-align: center;
-  padding: 8px;
-  position: absolute;
-  width: 217px;
-  height: 49px;
-  display: block;
-  background: #0000AD;
-  border-radius: 24.5px;
-}
-
-.text{
-  text-align: center;
-  font-family: IBM Plex Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 131.19%;
-  text-align: center;
-  color: #000000;
-  padding-top: 8px;
-}
-
+/* welcome starts */
 .hero {
   width: calc(100%-64px);
   max-width: 1110px;
@@ -200,17 +142,20 @@ MAIN
   line-height: 109.69%;
 }
 
-.welcome-images
-{
+.welcome-images{
   align-items: center;
   float:right;
   width: 55%;
   height: inherit;
 }
+/* welcome ends */
 
+
+/* slider starts */
 input[type=radio] {
   display: none;
 }
+
 .card {
   position: absolute;
   width: 60%;
@@ -221,6 +166,7 @@ input[type=radio] {
   transition: transform 0.4s ease;
   cursor: pointer;
 }
+
 .container {
   width: 100%;
   max-width: 800px;
@@ -231,12 +177,14 @@ input[type=radio] {
   flex-direction: column;
   align-items: center;
 }
+
 .cards {
   position: relative;
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
 }
+
 img {
   width: 100%;
   height: 100%;
@@ -249,25 +197,30 @@ img {
   opacity: 0.4;
   z-index: 0;
 }
+
 #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
   transform: translatex(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
+
 #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
+
 #item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img {
   box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
+
 .player {
   background-color: #fff;
   border-radius: 8px;
   min-width: 320px;
   padding: 16px 64px;
 }
+
 .upper-part {
   position: relative;
   display: flex;
@@ -276,28 +229,34 @@ img {
   height: 36px;
   overflow: hidden;
 }
+
 .play-icon {
   margin-right: 10px;
 }
+
 .song-info {
   width: calc(100% - 32px);
   display: block;
 }
+
 .song-info .title {
   color: #403d40;
   font-size: 14px;
   line-height: 24px;
 }
+
 .sub-line {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+
 .subtitle, .time {
   font-size: 12px;
   line-height: 16px;
   color: #c6c5c6;
 }
+
 .info-area {
   width: 100%;
   position: absolute;
@@ -305,22 +264,162 @@ img {
   left: 30px;
   transition: transform 0.4s ease-in;
 }
+
 #item-2:checked ~ .player #test {
   transform: translateY(0);
 }
+
 #item-2:checked ~ .player #test {
   transform: translateY(-40px);
 }
+
 #item-3:checked ~ .player #test {
   transform: translateY(-80px);
 }
+/* slider ends */
+
+/* button ends */
+.button-container{
+  width: calc(100%-64px);
+  max-width: 1110px;
+  margin: -55px auto;
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left {
+  position: relative;
+  width: 30%;
+  height:inherit;
+  margin-left: 130px;
+  text-align: center;
+}
+
+.right {
+  position: relative;
+  width:70%;
+  height:inherit;
+  margin-right: 150px;
+  text-align: center;
+}
+
+.button{
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 131.19%;
+
+  color: #FFFFFF;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  position: absolute;
+  width: 217px;
+  height: 49px;
+  display: block;
+  background: #0000AD;
+  border-radius: 24.5px;
+  border-color: transparent;
+}
+
+.text{
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 131.19%;
+  text-align: center;
+  color: #000000;
+  padding-top: 8px;
+}
+/* button ends */
+
+/* about-us */
+#about-us-container {
+  width: calc(100%-64px);
+  max-width: 1110px;
+  margin: 10px auto;
+  margin-top: 100px;
+  height: auto;
+  position: relative;
+  display: block;
+  padding-bottom: 15px;
+  padding-left: 72px;
+}
+
+#about-us-container > h3 {
+  position: relative;
+  width: 30%;
+  height: inherit;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#para-container {
+  width: calc(100%-64px);
+  max-width: 1110px;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+}
+
+#text-left {
+  position: relative;
+  height:inherit;
+  text-align: left;
+  margin-right: 80px;
+}
+
+#text-right {
+  position: relative;
+  height:inherit;
+  margin-right: 270px;
+  text-align: left;
+}
+/* about-us ends */
+
+/* service starts */
+#service-container {
+  width: calc(100%-64px);
+  max-width: 1110px;
+  margin: 35px auto;
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#service-button {
+  position: relative;
+  margin-left: 130px;
+  text-align: center;
+}
+
+#service-text {
+  position: relative;
+  margin-right: 105px;
+  text-align: center;
+}
+/* service ends */
+
 
 
 /*RESPONSIVE*/
 
 /* ipads */
 @media screen and (max-width: 992px) {
-
   nav{
     padding-left: 18px;
   }
@@ -357,14 +456,86 @@ img {
   .left {
     width: 30%;
     height:inherit;
-    margin-left: 50px;    
+    margin-left: 54px;    
   }
-  
+
   .right {
     width:70%;
     height:inherit;
-    margin-left: -60px;
+    margin-left: -54px;   /* maybe 60 */
     margin-top: -130px;
+  }
+
+  #about-us-container {
+    width: calc(100%-64px);
+    max-width: 1110px;
+    margin: 10px auto;
+    margin-top: -300px;
+    height: auto;
+    position: relative;
+    display: block;
+    padding-bottom: 15px;
+    padding-left: 72px;
+  }
+  
+  #about-us-container > h3 {
+    position: relative;
+    height: inherit;
+    width: 100%;
+    text-align: left; 
+    margin-bottom: 10px;
+  }
+  
+  #para-container {
+    width: calc(100%-64px);
+    max-width: 1110px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+  }
+  
+  #text-left {
+    position: relative;
+    height:inherit;
+    text-align: left;
+    margin-right: 80px;
+    margin-bottom: 10px;
+  }
+  
+  #text-right {
+    position: relative;
+    height:inherit;
+    margin-right: 270px;
+    text-align: left;
+  }
+
+  #service-container {
+    width: calc(100%-64px);
+    max-width: 1110px;
+    margin: 35px auto;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  #service-button {
+    position: relative;
+    text-align: center;
+    margin-left: 54px;
+  }
+
+  #service-text {
+    position: relative;
+    text-align: center;
+    padding-left: 54px;
+    margin-top: -86px;
   }
 }
 
@@ -383,7 +554,7 @@ img {
     width: 100%;
     padding-left: 0;
   }
-  
+
   .nav-right {
     position: absolute;
     right: 0px;
@@ -408,7 +579,7 @@ img {
   .nav-right.open {
     display: block;
   }
-  
+
   .button-container {
     width: calc(100%-64px);
     max-width: 1110px;
@@ -420,7 +591,7 @@ img {
     justify-content: space-evenly;
     align-items: flex-start;
   }
-  
+
   .left {
     width: 30%;
     height:inherit;
@@ -431,7 +602,81 @@ img {
     width: 90%;
     height:inherit;
     margin-left: 30px;
+    text-align: left;
+  }
 
+  #about-us-container {
+    width: calc(100%-64px);
+    max-width: 1110px;
+    margin: 10px auto;
+    margin-top: -325px;
+    height: auto;
+    position: relative;
+    display: block;
+    padding-bottom: 15px;
+    padding-left: 72px;
+  }
+
+  #about-us-container > h3 {
+    position: relative;
+    height: inherit;
+    width: 100%;
+    text-align: left; 
+    margin-bottom: 10px;
+  }
+
+  #para-container {
+    width: calc(100%-64px);
+    max-width: 1110px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+  }
+
+  #text-left {
+    position: relative;
+    height:inherit;
+    text-align: left;
+    margin-right: 80px;
+    margin-bottom: 10px;
+  }
+
+  #text-right {
+    position: relative;
+    height:inherit;
+    margin-right: 80px;
+    text-align: left;
+  }
+
+  #service-container {
+    width: calc(100%-64px);
+    max-width: 1110px;
+    margin: 35px auto;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  #service-button {
+    position: relative;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+
+  #service-text {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-left: 30px;
+    text-align: left;
   }
 }
 
