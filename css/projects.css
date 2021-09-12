@@ -21,6 +21,7 @@ body {
 /*CARD*/
 
 .cards{
+    
     max-width: 1100px;
     margin: 36px auto;
     display: grid;
@@ -34,7 +35,9 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    
+    text-align: center;
+    place-self: center;
+    zoom:1.1;
 }
 
 .boxframe {
@@ -50,7 +53,7 @@ body {
 
 #project-name {
     z-index: 1;
-    margin: 12px 0;
+    margin: 10px 0;
     padding-left: -16px;
     font-family: 'IBM Plex Sans';
     font-style: normal;
@@ -94,7 +97,7 @@ body {
 }
 
 .subtitle {
-    font-family: IBM Plex Sans;
+    font-family: 'IBM Plex Sans';
     text-align: end;
     font-style: normal;
     font-weight: bold;
@@ -106,25 +109,8 @@ body {
 
 
 
-
-
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-
 #heading {
+    padding-left: 94px;
     margin: 36px auto;
     font-family: 'IBM Plex Sans';
     font-style: normal;
@@ -136,10 +122,11 @@ body {
 }
 
 main{
+    
     max-width: 1100px;
     width: calc(100%-64px);
     margin: 0 auto;
-    padding-left: 64px;
+    
 }
 
 
@@ -163,13 +150,18 @@ main{
     cursor: pointer;
 }
 
+.header{
+  
+  top:0;
+  position: sticky;
+  z-index: 5;
+}
 
 nav {
     margin: 6px auto;
     width: calc(100%-64px);
-    max-width: 1110px;
+    max-width: 1100px;
     position: relative;
-    padding-left: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -328,27 +320,18 @@ nav {
     nav{
       padding-left: 18px;
     }
+    .cards{
+      display: block;
+    }
     .card{
-     
-      grid-column: 1;
+      margin: 0 auto;
+      zoom: 1.5;
     }
   }
   
   @media screen and (max-width: 576px) {
   
-    .hero{
-      align-items: center;
-    }
-    .welcome-text{
-      font-size: 50px;
-      width: 100%;
-      padding-left: 18px;
-    }
-    .welcome-images{
-      margin-top: 64px;
-      width: 100%;
-      padding-left: 0;
-    }
+  
       .nav-right {
           position: absolute;
           right: 0px;
@@ -372,11 +355,46 @@ nav {
           display: block;
       }
       #heading{
+        padding-left: 32px;
         font-size: 36px;
       }
       .card{
         zoom: 0.85;
         grid-column: 1;
       }
+      
   }
-  
+
+
+  /*Footer*/
+
+  .footer-container
+  {
+    margin: 48px auto;
+    width: calc(100%-64px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    position: relative;
+  }
+
+  .footer-logo
+  {
+    width: 10%;
+    position: absolute;
+    margin: 6px 64px;
+  }
+
+  .footer-company-name{
+    text-align: end;
+    position: absolute;
+    width:90%;
+  }
+  .footer-company-name-h2{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 131.19%;
+  }
