@@ -641,6 +641,7 @@ img {
     
   .nav-right.open {
     display: block;
+    z-index: 3;
     background-color: white;
   }
 
