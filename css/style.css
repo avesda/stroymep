@@ -415,6 +415,66 @@ img {
 }
 /* service ends */
 
+/* contact starts */
+#contact-container {
+  width: calc(100%-64px);
+  max-width: 1110px;
+  margin: 35px auto;
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#contact-button {
+  position: relative;
+  margin-left: 130px;
+  text-align: center;
+  margin-top: -46px;
+}
+
+#contact-text {
+  position: relative;
+  margin-right: 170px;
+  text-align: center;
+}
+/* contact ends */
+
+/* footer starts */
+.footer-container
+{
+  margin: 48px auto;
+  width: calc(100%-64px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  position: relative;
+}
+
+.footer-logo
+{
+  width: 10%;
+  position: absolute;
+  margin: 6px 64px;
+}
+
+.footer-company-name{
+  text-align: end;
+  position: absolute;
+  width:90%;
+}
+.footer-company-name-h2{
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 131.19%;
+}
+/* footer ends */
 
 
 
@@ -581,6 +641,8 @@ img {
     
   .nav-right.open {
     display: block;
+    z-index: 3;
+    background-color: white;
   }
 
   .button-container {
@@ -680,6 +742,13 @@ img {
     width: 100%;
     padding-left: 30px;
     text-align: left;
+  }
+
+  .footer-logo
+  {
+      width: 10%;
+      position: absolute;
+      margin: 6px 15px;
   }
 }
 

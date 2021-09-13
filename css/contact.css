@@ -135,6 +135,7 @@ body {
     position: relative;
     padding-bottom: 15px;
     padding-left: 72px;
+    padding-right: 72px;
 }
 
 #socials > div {
@@ -152,9 +153,10 @@ i {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: normal;
     color: black;
-    font-size: 24px;
+    font-size: 22px;
     padding: 5px;
     padding-bottom: 20px;
+    margin-top: 0;
 }
 /* socials ends */
 
@@ -198,6 +200,40 @@ i {
     nav{
       padding-left: 18px;
     }
+
+    #socials {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1.5fr);
+        row-gap: 1em;
+        width: calc(100%-64px);
+        max-width: 1110px;
+        margin: 100px auto;
+        margin-bottom: 10px;
+        height: auto;
+        position: relative;
+        padding-bottom: 15px;
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+    
+    #socials > div {
+        padding: 15px;
+        text-align: left;
+        padding-left: 20%;
+    }
+
+    #map-responsive{
+        overflow:hidden;
+        padding-bottom:40%;
+        position:relative;
+        height: 0;
+        width: calc(100%-64px);
+        max-width: 1110px;
+        margin: 100px 90px;
+        position: relative;
+        padding-left: 72px;
+    }
 }
 
 /* phones */
@@ -225,5 +261,71 @@ i {
         
     .nav-right.open {
         display: block;
+        z-index: 3;
+        background-color: white;
+    }
+
+    #socials {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1.5fr);
+        row-gap: 0.5em;
+        width: calc(100%-64px);
+        max-width: 1110px;
+        margin: 100px auto;
+        margin-bottom: 10px;
+        height: auto;
+        position: relative;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #socials > div {
+        padding: 5px;
+        text-align: left;
+    }
+
+    i {
+        font-size: 40px;
+        color: #005CB9;
+        padding: 10px;
+    }
+    
+    .black {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: normal;
+        color: black;
+        font-size: 22px;
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+
+    #map-responsive{
+        overflow:hidden;
+        padding-bottom:40%;
+        position:relative;
+        height: 500px;
+        width: calc(100%-64px);
+        max-width: 1110px;
+        margin: 50px 50px;
+        position: relative;
+        padding-left: 72px;
+        z-index: 0;
+    }
+    
+    #map-responsive iframe{
+        left:0;
+        top:0;
+        height: 100%;
+        width: 100%;
+        position:absolute;
+        z-index: 0;
+    }
+
+    .footer-logo
+    {
+        width: 10%;
+        position: absolute;
+        margin: 6px 15px;
     }
 }
