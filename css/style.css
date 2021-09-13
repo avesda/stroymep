@@ -51,7 +51,6 @@ nav {
   align-items: center;
   min-height: 8vh;
   background-color: rgb(255, 255, 255);
-
 }
 
 .nav-left {
@@ -455,13 +454,6 @@ img {
   position: relative;
 }
 
-.footer-logo
-{
-  width: 10%;
-  position: absolute;
-  margin: 6px 64px;
-}
-
 .footer-company-name{
   text-align: end;
   position: absolute;
@@ -578,14 +570,14 @@ img {
   #service-container {
     width: calc(100%-64px);
     max-width: 1110px;
-    margin: 35px auto;
-    height: 70px;
+    margin: 10px auto;
+    margin-bottom: 70px;
+    height: 100px;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: flex-start;
-    background-color: teal;
   }
   
   #service-button {
@@ -599,20 +591,20 @@ img {
     position: relative;
     text-align: center;
     padding-left: 54px;
-    margin-top: -86px;
+    margin-top: -110px;
   }
 
   #contact-container {
     width: calc(100%-64px);
     max-width: 1110px;
-    margin: 35px auto;
-    height: 70px;
+    margin: 10px auto;
+    margin-bottom: 70px;
+    height: 100px;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: flex-start;
-    background-color: thistle;
   }
   
   #contact-button {
@@ -626,11 +618,7 @@ img {
     position: relative;
     text-align: center;
     padding-left: 54px;
-    margin-top: -65px;
-  }
-
-  body {
-    background-color: violet;
+    margin-top: -90px;
   }
 }
 
@@ -752,13 +740,14 @@ img {
   #service-container {
     width: calc(100%-64px);
     max-width: 1110px;
-    margin: 35px auto;
-    height: 50px;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: flex-start;
+    margin: 10px auto;
+    margin-bottom: 70px;
+    height: 100px;
   }
   
   #service-button {
@@ -776,11 +765,33 @@ img {
     text-align: left;
   }
 
-  .footer-logo
-  {
-      width: 10%;
-      position: absolute;
-      margin: 6px 15px;
+  #contact-container {
+    width: calc(100%-64px);
+    max-width: 1110px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    margin: 10px auto;
+    margin-bottom: 70px;
+    height: 100px;
+  }
+  
+  #contact-button {
+    position: relative;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+
+  #contact-text {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-left: 30px;
+    text-align: left;
   }
 }
 

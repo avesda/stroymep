@@ -172,13 +172,6 @@ i {
   position: relative;
 }
 
-.footer-logo
-{
-  width: 10%;
-  position: absolute;
-  margin: 6px 64px;
-}
-
 .footer-company-name{
   text-align: end;
   position: absolute;
@@ -227,7 +220,7 @@ i {
         overflow:hidden;
         padding-bottom:40%;
         position:relative;
-        height: 0;
+        height: 576px;     /* 0 before */
         width: calc(100%-64px);
         max-width: 1110px;
         margin: 100px 90px;
@@ -304,7 +297,7 @@ i {
         overflow:hidden;
         padding-bottom:40%;
         position:relative;
-        height: 500px;
+        height: 324px;
         width: calc(100%-64px);
         max-width: 1110px;
         margin: 50px 50px;
@@ -320,12 +313,5 @@ i {
         width: 100%;
         position:absolute;
         z-index: 0;
-    }
-
-    .footer-logo
-    {
-        width: 10%;
-        position: absolute;
-        margin: 6px 15px;
     }
 }

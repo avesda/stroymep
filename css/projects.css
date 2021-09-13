@@ -326,13 +326,6 @@ nav {
   position: relative;
 }
 
-.footer-logo
-{
-  width: 10%;
-  position: absolute;
-  margin: 6px 64px;
-}
-
 .footer-company-name{
   text-align: end;
   position: absolute;
@@ -394,12 +387,4 @@ nav {
     zoom: 0.85;
     grid-column: 1;
   }
-
-  .footer-logo
-  {
-      width: 10%;
-      position: absolute;
-      margin: 6px 15px;
-  }
-  
 }
