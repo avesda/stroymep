@@ -579,12 +579,13 @@ img {
     width: calc(100%-64px);
     max-width: 1110px;
     margin: 35px auto;
-    height: 50px;
+    height: 70px;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: flex-start;
+    background-color: teal;
   }
   
   #service-button {
@@ -599,6 +600,37 @@ img {
     text-align: center;
     padding-left: 54px;
     margin-top: -86px;
+  }
+
+  #contact-container {
+    width: calc(100%-64px);
+    max-width: 1110px;
+    margin: 35px auto;
+    height: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: thistle;
+  }
+  
+  #contact-button {
+    position: relative;
+    text-align: center;
+    margin-left: 54px;
+    margin-top: 0;
+  }
+
+  #contact-text {
+    position: relative;
+    text-align: center;
+    padding-left: 54px;
+    margin-top: -65px;
+  }
+
+  body {
+    background-color: violet;
   }
 }
 
