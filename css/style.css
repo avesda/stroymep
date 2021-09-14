@@ -17,8 +17,51 @@ body {
 }
 
 .highlight-blue {
-  color: #0000AD;
+  color: #005CB9;
 }
+
+h3 {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 131.19%;
+  color: #000000;
+  text-align: left;
+}
+
+.text{
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 131.19%;
+  text-align: center;
+  color: #000000;
+}
+
+.button{
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 131.19%;
+
+  color: #FFFFFF;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  position: absolute;
+  width: 217px;
+  height: 49px;
+  display: block;
+  border-radius: 24.5px;
+  border-color: transparent;
+  
+  
+}
+/* padding-right: 72px; in project/contact/service container if problem with alignment   */
 
 /* nav starts */
 #company-name {
@@ -277,174 +320,115 @@ img {
 }
 /* slider ends */
 
-/* button ends */
-.button-container{
-  width: calc(100%-64px);
-  max-width: 1110px;
-  margin: -55px auto;
-  height: 50px;
+/* project starts */
+#project-container{  
   position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.left {
+#project-button {
   position: relative;
-  width: 30%;
-  height:inherit;
-  margin-left: 130px;
   text-align: center;
 }
 
-.right {
-  position: relative;
-  width:70%;
-  height:inherit;
-  margin-right: 150px;
-  text-align: center;
-}
-
-.button{
-  font-family: IBM Plex Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 131.19%;
-
-  color: #FFFFFF;
-  cursor: pointer;
-  text-align: center;
-  padding: 8px;
-  position: absolute;
-  width: 217px;
-  height: 49px;
-  display: block;
+#project-button > button {
   background: #0000AD;
-  border-radius: 24.5px;
-  border-color: transparent;
 }
 
-.text{
-  text-align: center;
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 131.19%;
-  text-align: center;
-  color: #000000;
-  padding-top: 8px;
-}
-/* button ends */
-
-/* about-us */
-#about-us-container {
-  width: calc(100%-64px);
-  max-width: 1110px;
-  margin: 10px auto;
-  margin-top: 100px;
-  height: auto;
+#project-text {
   position: relative;
-  display: block;
-  padding-bottom: 15px;
-  padding-left: 72px;
-}
-
-#about-us-container > h3 {
-  position: relative;
-  width: 30%;
-  height: inherit;
   text-align: left;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
-
-#para-container {
-  width: calc(100%-64px);
-  max-width: 1110px;
-  height: auto;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 22px;
-}
-
-#text-left {
-  position: relative;
-  height:inherit;
-  text-align: left;
-  margin-right: 80px;
-}
-
-#text-right {
-  position: relative;
-  height:inherit;
-  margin-right: 270px;
-  text-align: left;
-}
-/* about-us ends */
+/* project ends */
 
 /* service starts */
-#service-container {
-  width: calc(100%-64px);
-  max-width: 1110px;
-  margin: 35px auto;
-  height: 50px;
+#service-container{  
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #service-button {
   position: relative;
-  margin-left: 130px;
   text-align: center;
-  margin-top: -46px;
+}
+
+#service-button > button {
+  background: #0093E9;
 }
 
 #service-text {
   position: relative;
-  margin-right: 105px;
-  text-align: center;
+  text-align: left;
+  padding-bottom: 10px;
 }
 /* service ends */
 
 /* contact starts */
-#contact-container {
-  width: calc(100%-64px);
-  max-width: 1110px;
-  margin: 35px auto;
-  height: 50px;
+#contact-container{  
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 50px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #contact-button {
   position: relative;
-  margin-left: 130px;
   text-align: center;
-  margin-top: -46px;
+}
+
+#contact-button > button {
+  background: #005CB9;
 }
 
 #contact-text {
   position: relative;
-  margin-right: 170px;
-  text-align: center;
+  text-align: left;
+  padding-bottom: 10px;
 }
 /* contact ends */
 
+/* main grid starts */
+main {
+  width: calc(100%-64px);
+  max-width: 1110px;
+  margin: 64px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1em;
+  column-gap: 5em;
+}
+
+#who-are-we, #our-team, #our-values {
+  padding-left: 72px;
+  font-weight: bold;
+  color: #5C5C5C;
+  padding-bottom: 2px;
+  font-size: 20px;
+}
+
+#who-are-we > h3, #our-team > h3, #our-values > h3 {
+  padding-bottom: 5px;
+}
+
+#our-team > p > a {
+  color: #5C5C5C;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* main grid ends */
+
+
 /* footer starts */
-.footer-container
-{
+.footer-container {
   margin: 48px auto;
   width: calc(100%-64px);
   display: flex;
@@ -459,6 +443,7 @@ img {
   position: absolute;
   width:90%;
 }
+
 .footer-company-name-h2{
   font-family: 'IBM Plex Sans';
   font-style: normal;
@@ -495,76 +480,40 @@ img {
     padding-left: 32px;
   }
 
-  .button-container {
-    width: calc(100%-64px);
-    max-width: 1110px;
-    margin: 350px auto;
-    height: 50px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+  main {
+    margin: 18px auto;
+    align-items: center;
+    margin-top: 36vh;
+  }
+  #who-are-we, #our-team, #our-values {
+    align-items: center;
+    width: 100%;
+    padding-left: 32px;
   }
 
-  .left {
-    width: 30%;
-    height:inherit;
-    margin-left: 54px;    
-  }
-
-  .right {
-    width:70%;
-    height:inherit;
-    margin-left: -54px;   /* maybe 60 */
-    margin-top: -130px;
-  }
-
-  #about-us-container {
+  #project-container{  
     width: calc(100%-64px);
     max-width: 1110px;
     margin: 10px auto;
-    margin-top: -300px;
-    height: auto;
-    position: relative;
-    display: block;
-    padding-bottom: 15px;
-    padding-left: 72px;
-  }
-  
-  #about-us-container > h3 {
-    position: relative;
-    height: inherit;
-    width: 100%;
-    text-align: left; 
-    margin-bottom: 10px;
-  }
-  
-  #para-container {
-    width: calc(100%-64px);
-    max-width: 1110px;
-    height: auto;
+    margin-bottom: 70px;
+    height: 100px;
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 22px;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
-  
-  #text-left {
+  #project-button {
     position: relative;
-    height:inherit;
-    text-align: left;
-    margin-right: 80px;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 54px;
+    margin-top: 0;
   }
-  
-  #text-right {
+  #project-text {
     position: relative;
-    height:inherit;
-    margin-right: 270px;
-    text-align: left;
+    text-align: center;
+    padding-left: 54px;
+    margin-top: -110px;
   }
 
   #service-container {
@@ -579,14 +528,12 @@ img {
     justify-content: space-evenly;
     align-items: flex-start;
   }
-  
   #service-button {
     position: relative;
     text-align: center;
     margin-left: 54px;
     margin-top: 0;
   }
-
   #service-text {
     position: relative;
     text-align: center;
@@ -606,14 +553,12 @@ img {
     justify-content: space-evenly;
     align-items: flex-start;
   }
-  
   #contact-button {
     position: relative;
     text-align: center;
     margin-left: 54px;
     margin-top: 0;
   }
-
   #contact-text {
     position: relative;
     text-align: center;
@@ -638,6 +583,20 @@ img {
     padding-left: 0;
   }
 
+  main {
+    align-items: center;
+    margin-top: 40vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 0;
+    row-gap: 0.5em;
+  } 
+  #who-are-we, #our-team, #our-values {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
   .nav-right {
     position: absolute;
     right: 0px;
@@ -647,93 +606,44 @@ img {
     right: 19px;
     display: none;
   }
-
   .nav-right > li {
     margin-right: 0px;
     margin-top: 5px;
-  }
-    
+  } 
   .burger {
     display: block;
     margin-right: 19px;
     cursor: pointer;
-  }
-    
+  }  
   .nav-right.open {
     display: block;
     z-index: 3;
     background-color: white;
   }
 
-  .button-container {
+  #project-container{  
     width: calc(100%-64px);
     max-width: 1110px;
-    margin: 400px auto;
-    height: 50px;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: flex-start;
-  }
-
-  .left {
-    width: 30%;
-    height:inherit;
-    margin-left: 30px;    
-  }
-    
-  .right {
-    width: 90%;
-    height:inherit;
-    margin-left: 30px;
-    text-align: left;
-  }
-
-  #about-us-container {
-    width: calc(100%-64px);
-    max-width: 1110px;
     margin: 10px auto;
-    margin-top: -325px;
-    height: auto;
-    position: relative;
-    display: block;
-    padding-bottom: 15px;
-    padding-left: 72px;
+    margin-bottom: 70px;
+    height: 100px;
   }
-
-  #about-us-container > h3 {
+  #project-button {
     position: relative;
-    height: inherit;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+  #project-text {
+    position: relative;
+    text-align: center;
     width: 100%;
-    text-align: left; 
-    margin-bottom: 10px;
-  }
-
-  #para-container {
-    width: calc(100%-64px);
-    max-width: 1110px;
-    height: auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 22px;
-  }
-
-  #text-left {
-    position: relative;
-    height:inherit;
-    text-align: left;
-    margin-right: 80px;
-    margin-bottom: 10px;
-  }
-
-  #text-right {
-    position: relative;
-    height:inherit;
-    margin-right: 80px;
+    padding-left: 30px;
     text-align: left;
   }
 
@@ -749,14 +659,12 @@ img {
     margin-bottom: 70px;
     height: 100px;
   }
-  
   #service-button {
     position: relative;
     text-align: center;
     margin-left: 30px;
     margin-top: 100px;
   }
-
   #service-text {
     position: relative;
     text-align: center;
@@ -773,19 +681,16 @@ img {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: flex-start;
-
     margin: 10px auto;
     margin-bottom: 70px;
     height: 100px;
   }
-  
   #contact-button {
     position: relative;
     text-align: center;
     margin-left: 30px;
     margin-top: 100px;
   }
-
   #contact-text {
     position: relative;
     text-align: center;
