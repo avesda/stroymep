@@ -484,6 +484,11 @@ main {
     margin: 18px auto;
     align-items: center;
     margin-top: 36vh;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 0;
+    row-gap: 0.5em;
   }
   #who-are-we, #our-team, #our-values {
     align-items: center;
@@ -491,79 +496,14 @@ main {
     padding-left: 32px;
   }
 
-  #project-container{  
-    width: calc(100%-64px);
-    max-width: 1110px;
-    margin: 10px auto;
-    margin-bottom: 70px;
-    height: 100px;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-items: flex-start;
+  #project-container, #service-container, #contact-container {
+    width: 100%;
+    padding-left: 32px;
   }
-  #project-button {
-    position: relative;
-    text-align: center;
-    margin-left: 54px;
-    margin-top: 0;
-  }
-  #project-text {
-    position: relative;
-    text-align: center;
-    padding-left: 54px;
-    margin-top: -110px;
-  }
-
-  #service-container {
-    width: calc(100%-64px);
-    max-width: 1110px;
-    margin: 10px auto;
-    margin-bottom: 70px;
-    height: 100px;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-  #service-button {
-    position: relative;
-    text-align: center;
-    margin-left: 54px;
-    margin-top: 0;
-  }
-  #service-text {
-    position: relative;
-    text-align: center;
-    padding-left: 54px;
-    margin-top: -110px;
-  }
-
-  #contact-container {
-    width: calc(100%-64px);
-    max-width: 1110px;
-    margin: 10px auto;
-    margin-bottom: 70px;
-    height: 100px;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-  #contact-button {
-    position: relative;
-    text-align: center;
-    margin-left: 54px;
-    margin-top: 0;
-  }
-  #contact-text {
-    position: relative;
-    text-align: center;
-    padding-left: 54px;
-    margin-top: -90px;
+  #project-container > button, 
+  #service-container > button, 
+  #contact-container > button {
+    padding-left: 32px;
   }
 }
 
@@ -596,6 +536,16 @@ main {
     padding-left: 18px;
     padding-right: 18px;
   }
+  #project-container, #service-container, #contact-container {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  #project-container > button, 
+  #service-container > button, 
+  #contact-container > button {
+    padding-left: 18px;
+  }
 
   .nav-right {
     position: absolute;
@@ -619,84 +569,6 @@ main {
     display: block;
     z-index: 3;
     background-color: white;
-  }
-
-  #project-container{  
-    width: calc(100%-64px);
-    max-width: 1110px;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 10px auto;
-    margin-bottom: 70px;
-    height: 100px;
-  }
-  #project-button {
-    position: relative;
-    text-align: center;
-    margin-left: 30px;
-    margin-top: 100px;
-  }
-  #project-text {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    padding-left: 30px;
-    text-align: left;
-  }
-
-  #service-container {
-    width: calc(100%-64px);
-    max-width: 1110px;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 10px auto;
-    margin-bottom: 70px;
-    height: 100px;
-  }
-  #service-button {
-    position: relative;
-    text-align: center;
-    margin-left: 30px;
-    margin-top: 100px;
-  }
-  #service-text {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    padding-left: 30px;
-    text-align: left;
-  }
-
-  #contact-container {
-    width: calc(100%-64px);
-    max-width: 1110px;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 10px auto;
-    margin-bottom: 70px;
-    height: 100px;
-  }
-  #contact-button {
-    position: relative;
-    text-align: center;
-    margin-left: 30px;
-    margin-top: 100px;
-  }
-  #contact-text {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    padding-left: 30px;
-    text-align: left;
   }
 }
 
