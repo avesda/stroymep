@@ -24,6 +24,8 @@
       <meta name="msapplication-TileColor" content="#FFFFFF">
       <meta name="msapplication-TileImage" content="ico/stroymep-144.png?v=v1">
       <meta name="msapplication-config" content="ico/browserconfig.xml">
+
+      
       <link rel="stylesheet" href="css/style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,10 +43,10 @@
           </div>
 
           <ul class="nav-right" >
-              <li><a href="index.html">home</a></li>
-              <li><a href="pages/projects.html">projects</a></li>
-              <li><a href="#">services</a></li>
-              <li><a href="pages/contact.html">contact us</a></li>
+              <li><a href="index.html" style="color: #005CB9;">Home</a></li>
+              <li><a href="pages/projects.html">Projects</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="pages/contact.html">Contact us</a></li>
           </ul>
 
             
@@ -65,49 +67,40 @@
         
         <div class="welcome-images">
             <div class="container">
-            <input type="radio" name="slider"  id="item-1" checked>
-            <input type="radio" name="slider"  id="item-2">
-            <input type="radio" name="slider"  id="item-3">
-            
-              <div class="cards">
-                <label class="card" for="item-1" id="song-1">
-                  <img src="img/yda-nursultan.jpg" alt="song" >
-                </label>
-                <label class="card" for="item-2" id="song-2" >
-                  <img src="img/Hospital.jpg" alt="song" >
-                </label>
-                <label class="card" for="item-3" id="song-3" >
-                  <img src="img/museum.jpeg" alt="song" >
-                </label>
+
+
+              <div class="back-welcome-images">
+
+                <div class="mySlides1 fade">
+                  <img src="img/library.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides1 fade">
+                  <img src="img/naz-center.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides1 fade">
+                  <img src="img/Hampton.png" style="width:100%">
+                </div>
+                
               </div>
 
-              <div class="player">
-                <div class="upper-part">
-                  <div class="play-icon">
-                    <img src=svg/location.svg>
-                  </div>
-                  <div class="info-area" id="test">
-                    <label class="song-info" id="song-info-1">
-                      <div class="title">Nur-Sultan City Hospital</div>
-                      <div class="sub-line">
-                        <div class="subtitle">Nur-Sultan, Kazakhstan</div>
-                      </div>
-                    </label>
-                    <label class="song-info" id="song-info-2">
-                      <div class="title">City Hospital</div>
-                      <div class="sub-line">
-                        <div class="subtitle">Turkestan, Kazakhstan</div>
-                      </div>
-                    </label>
-                    <label class="song-info" id="song-info-3">
-                      <div class="title">Ahmad Yassawi Museum</div>
-                      <div class="sub-line">
-                        <div class="subtitle">Turkestan, Kazakhstan</div>
-                      </div>
-                    </label>
-                  </div>
+              <div class="welcome-images">
+
+                <div class="mySlides fade">
+                  <img src="img/Hampton.png" style="width:100%">
                 </div>
+                
+                <div class="mySlides fade">
+                  <img src="img/library2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="img/naz-center.jpg" style="width:100%">
+                </div>
+                
               </div>
+              
 
             </div>
         </div>
@@ -180,5 +173,28 @@
           </div>
         </div>
       </footer>
+
+
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var slides1 = document.getElementsByClassName("mySlides1");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+            slides1[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          slides[slideIndex-1].style.display = "block";  
+          slides1[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
   </body>
 </html>
