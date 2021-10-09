@@ -20,25 +20,48 @@ body {
   color: #005CB9;
 }
 
+.grey-bg {
+  background-color: #EEEEEE;
+  height: auto;
+  width: calc(100%-64px);
+}
+
+.grey {
+  width: calc(100%-64px);
+}
+
 h3 {
-  font-family: "IBM Plex Sans";
+  font-family:  "IBMPlexSansBold";
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 36px;
   line-height: 131.19%;
   color: #000000;
   text-align: left;
 }
 
+/* projects and services headings use kri isko bd mein check krk kaatna hoga shaid */
 .text{
   text-align: center;
-  font-family: "IBM Plex Sans";
+  font-family: "IBMPlexSansBold";
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 32px;
   line-height: 131.19%;
   text-align: center;
   color: #000000;
+}
+
+.p-text {
+  font-family: "IBMPlexSansBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 150%;
+  /* or 33px */
+
+
+color: #5C5C5C;
 }
 
 .button{
@@ -58,8 +81,6 @@ h3 {
   display: block;
   border-radius: 24.5px;
   border-color: transparent;
-  
-  
 }
 /* padding-right: 72px; in project/contact/service container if problem with alignment   */
 
@@ -176,6 +197,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .welcome-text{
@@ -187,9 +210,11 @@ nav {
   width: 45%;
   height: inherit;
   line-height: 98%;
-  font-family: IBMPlexSansBold;
+  font-family: "IBMPlexSansBold";
   font-style: normal;
   font-size: 55px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .welcome-images{
@@ -200,9 +225,8 @@ nav {
   align-items: center;
   overflow: hidden;
   height: auto;
-
-  
 }
+
 .back-welcome-images{
   clip-path: polygon(65% 15%, 0% 0%, 35% 85%, 100% 100%);
   opacity: 30%;
@@ -234,9 +258,9 @@ input[type=radio] {
   cursor: pointer;
 }
 
-.container {
+.rhombus {
   width: 55%;
-  height: 800px;
+  height: 1000px;
 }
 
 .cards {
@@ -340,103 +364,74 @@ img {
 }
 /* slider ends */
 
-/* project starts */
-#project-container{  
+/* project , serivce button starts */
+#project-container, #service-container{  
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  width: calc(100%-64px);
+  max-width: 1110px;
+  margin: 64px auto;
+  height: auto;
 }
 
-#project-button {
+#project-container {
+  padding-top: 0px;
+  margin-top: 0;
+}
+
+#service-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#project-button, #service-button {
   position: relative;
   text-align: center;
+  padding-bottom: 10px;
+  padding-left: 72px;
 }
 
 #project-button > button {
   background: #0000AD;
 }
 
-#project-text {
-  position: relative;
-  text-align: left;
-  padding-bottom: 10px;
-}
-/* project ends */
-
-/* service starts */
-#service-container{  
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-#service-button {
-  position: relative;
-  text-align: center;
-}
-
 #service-button > button {
   background: #0093E9;
 }
 
-#service-text {
+#project-text, #service-text {
   position: relative;
   text-align: left;
   padding-bottom: 10px;
+  padding-left: 72px;
+  width: 60%;
+  height: inherit;
 }
-/* service ends */
+/* project, service button ends */
 
-/* contact starts */
-#contact-container{  
+/* about + values + team + services starts */
+#about-values, #team-services {
   position: relative;
+  width: calc(100%-64px);
+  max-width: 1110px;
+  margin: 64px auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-#contact-button {
-  position: relative;
-  text-align: center;
-}
-
-#contact-button > button {
-  background: #005CB9;
-}
-
-#contact-text {
+#who-are-we, #our-values, #our-team {
   position: relative;
   text-align: left;
-  padding-bottom: 10px;
-}
-/* contact ends */
-
-/* main grid starts */
-main {
-  width: calc(100%-64px);
-  max-width: 1110px;
-  margin: 64px auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 1em;
-  column-gap: 5em;
-}
-
-#who-are-we, #our-team, #our-values {
+  padding-bottom: 40px;
   padding-left: 72px;
-  font-weight: bold;
-  color: #5C5C5C;
-  padding-bottom: 2px;
-  font-size: 20px;
+  width: 100%;
+  height: auto;
 }
 
-#who-are-we > h3, #our-team > h3, #our-values > h3 {
-  padding-bottom: 5px;
+#our-team {
+  padding-right: 20px;
 }
 
 #our-team > p > a {
@@ -444,7 +439,198 @@ main {
   text-decoration: none;
   cursor: pointer;
 }
-/* main grid ends */
+
+#about-values > #who-are-we > h3, 
+#about-values > #our-values > h3,
+#team-services > #our-team > h3{
+  margin: 20px 0;
+}
+/* about + values + team + services ends */
+
+#grey-content-1 {
+  max-width: 1110px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  row-gap: 1em;
+  column-gap: 5em;
+  height: auto;
+}
+
+/*  ------------------------------------------------------------------------------------  */
+
+/* projects slider */
+#projects{
+  max-width: 1100px;
+  width: calc(100%-64px);
+  margin: 0 auto;
+}
+
+.cards{
+  max-width: 1100px;
+  margin: 36px auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  height: 314px;  
+  width: 374px;    /*  h:351, w:450  */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  place-self: center;
+  zoom:1.1;
+  background-color: chartreuse;
+}
+
+.boxframe {
+  position: absolute;
+  border: 1px solid #000000;
+  z-index: 0;
+  width: 349px;       /*  h:300, w:350  */
+  height: 287px;
+  margin: 36px auto;
+  background-color: crimson;
+}
+
+#project-name {
+  z-index: 1;
+  margin: 5px 0;
+  padding-left: -16px;
+  font-family: 'IBMPlexSansBold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
+  color: #000000;
+  position: absolute;
+  left: 54px;
+}
+
+.project-image{
+  margin: 2px auto;
+  width: 374px;
+  height: 209px;      /*  h:232, w:380  */
+  z-index: 2;
+  position: absolute;
+}
+
+#img-project
+{
+  width: 374px;
+  height: 209px;
+}
+
+.sub-text{
+  position: absolute;
+  justify-content: end;
+  bottom: 6px;
+  right: 42px;
+}
+
+.status {
+  font-family: 'IBMPlexSansBold';
+  text-align: end;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.subtitle {
+  font-family: 'IBMPlexSansBold';
+  text-align: end;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #5C5C5C;
+}
+
+/* slider */
+.slider {
+  border-radius: 8px;
+  width: 374px;
+  height: 209px;     /* img same */
+}
+
+.wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+#items {
+  width: 10000px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#items.shifting {
+  transition: left .2s ease-out;
+}
+
+.slide {
+  width: 374px;
+  height: 209px;    /* img same */
+  cursor: pointer;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 1s;
+  position: relative;
+  background:transparent;
+}
+
+/* controls */
+.slider-controls {
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 52px;
+    left: 0px;
+    position: absolute;
+}
+
+.control {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  z-index: 2;
+}
+
+.prev,
+.next {
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.prev {
+  background-image: url(../ico/left-chevron.png);
+  left: 50px;
+}
+
+.next {
+  background-image: url(../ico/right-chevron.png);
+  left: 120px;
+}
+
+.prev:active,
+.next:active {
+  transform: scale(0.8);
+}
 
 
 /* footer starts */
@@ -516,11 +702,11 @@ main {
     padding-left: 32px;
   }
 
-  #project-container, #service-container, #contact-container {
+  #service-container, #contact-container {
     width: 100%;
     padding-left: 32px;
   }
-  #project-container > button, 
+  
   #service-container > button, 
   #contact-container > button {
     padding-left: 32px;
@@ -556,12 +742,12 @@ main {
     padding-left: 18px;
     padding-right: 18px;
   }
-  #project-container, #service-container, #contact-container {
+  #service-container, #contact-container {
     width: 100%;
     padding-left: 18px;
     padding-right: 18px;
   }
-  #project-container > button, 
+   
   #service-container > button, 
   #contact-container > button {
     padding-left: 18px;
