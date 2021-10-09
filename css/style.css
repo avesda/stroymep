@@ -2,7 +2,6 @@
   margin:0px;
   padding: 0px;
   box-sizing: border-box;
-
 }
 
 body {
@@ -11,25 +10,51 @@ body {
   font-size: 16px;
   color: black; 
   height:100%;
+}
 
-  animation: bugfix infinite 1s;
-  -webkit-animation: bugfix infinite 1s;
+
+/*Our custom fonts i guess. Gotta find a better way*/
+@font-face {
+  font-family: IBMPlexSansBold;
+  src: url(../font/IBMPlexSans-Bold.ttf);
+}
+@font-face {
+  font-family: IBMPlexSansReg;
+  src: url(../font/IBMPlexSans-Regular.ttf);
+}
+
+
+/*Removing bootstrap specific margins*/
+.h1, .h2{
+  margin-bottom: 0rem;
+}
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0rem; 
+}
+
+/*Sticky Header*/
+.header{
+  top:0;
+  position: sticky;
+  z-index: 5;
 }
 
 .highlight-blue {
   color: #005CB9;
 }
 
+/*Backgroud Tricks from Rumessa*/
 .grey-bg {
   background-color: #EEEEEE;
   height: auto;
   width: calc(100%-64px);
 }
-
 .grey {
   width: calc(100%-64px);
 }
 
+/*Have a look at our projects! text*/
 h3 {
   font-family:  "IBMPlexSansBold";
   font-style: normal;
@@ -52,6 +77,7 @@ h3 {
   color: #000000;
 }
 
+/*About us texts*/
 .p-text {
   font-family: "IBMPlexSansBold";
   font-style: normal;
@@ -59,10 +85,9 @@ h3 {
   font-size: 22px;
   line-height: 150%;
   /* or 33px */
-
-
-color: #5C5C5C;
+  color: #5C5C5C;
 }
+
 
 .button{
   font-family: IBM Plex Sans;
@@ -84,108 +109,6 @@ color: #5C5C5C;
 }
 /* padding-right: 72px; in project/contact/service container if problem with alignment   */
 
-@font-face {
-  font-family: IBMPlexSansBold;
-  src: url(../font/IBMPlexSans-Bold.ttf);
-}
-@font-face {
-  font-family: IBMPlexSansReg;
-  src: url(../font/IBMPlexSans-Regular.ttf);
-}
-
-/* nav starts */
-#company-name {
-  font-family: 'IBM Plex Sans';
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 23px;
-  font-style: normal;
-  cursor: pointer;
-}
-
-#logo {
-  width: 98px;
-  height: 98px;
-  top: 18px;
-  right: 18px;
-  cursor: pointer;
-}
-
-nav {
-  margin: 6px auto;
-  width: calc(100%-64px);
-  max-width: 1110px;
-  position: relative;
-  padding-left: 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 8vh;
-  background-color: rgb(255, 255, 255);
-}
-
-.nav-left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-right{
-
-  margin-right: 20px;
-  display: flex;
-  
-  justify-content: space-around;
-}
-
-.nav-right > li {
-  margin-right: 19px;
-  text-decoration: none;
-  list-style: none;
-
-}
-
-.nav-right > li > a {
-  font-family: IBMPlexSansReg;
-  font-size: 16px;
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-}
-
-.nav-right > li > a:hover {
-  color: #005CB9;
-}
-
-.nav-right > li > a:hover {
-  color: #005CB9;
-}
-
-.burger {
-  margin-top: 8px;
-  display: none;
-}
-
-.burger div{
-  width: 30px;
-  height: 2px;
-  background-color: #333;
-  margin: 6px 12px;
-  transition: 0.1s;
-}
-
-.line1.change {
-  transform: rotate(135deg) translate(7px,-5px);
-}
-
-.line2.change {
-  transform: rotate(45deg);
-}
-
-.line3.change  {
-  opacity: 0;
-}
-/* nav ends */
 
 /* welcome starts */
 .hero {
@@ -274,95 +197,9 @@ img {
   height: 100%;
   width: 100%;
   flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%
+
 }
 
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-  transform: translatex(-40%) scale(0.8);
-  opacity: 0.4;
-  z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-  transform: translatex(40%) scale(0.8);
-  opacity: 0.4;
-  z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
-}
-
-#item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img {
-  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-}
-
-.player {
-  background-color: #fff;
-  border-radius: 8px;
-  min-width: 320px;
-  padding: 16px 64px;
-}
-
-.upper-part {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-  height: 36px;
-  overflow: hidden;
-}
-
-.play-icon {
-  margin-right: 10px;
-}
-
-.song-info {
-  width: calc(100% - 32px);
-  display: block;
-}
-
-.song-info .title {
-  color: #403d40;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.sub-line {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.subtitle, .time {
-  font-size: 12px;
-  line-height: 16px;
-  color: #c6c5c6;
-}
-
-.info-area {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 30px;
-  transition: transform 0.4s ease-in;
-}
-
-#item-2:checked ~ .player #test {
-  transform: translateY(0);
-}
-
-#item-2:checked ~ .player #test {
-  transform: translateY(-40px);
-}
-
-#item-3:checked ~ .player #test {
-  transform: translateY(-80px);
-}
-/* slider ends */
 
 /* project , serivce button starts */
 #project-container, #service-container{  
