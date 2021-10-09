@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBMPlexSansBold', sans-serif;
   font-style: normal;
   font-size: 16px;
   color: black; 
@@ -40,6 +40,16 @@ h3 {
   text-align: left;
 }
 
+h4 {
+  font-family:  "IBMPlexSansBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 131.19%;
+  color: #000000;
+  text-align: left;
+}
+
 /* projects and services headings use kri isko bd mein check krk kaatna hoga shaid */
 .text{
   text-align: center;
@@ -52,20 +62,16 @@ h3 {
   color: #000000;
 }
 
-.p-text {
+.p-text, ul > li {
   font-family: "IBMPlexSansBold";
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
-  line-height: 150%;
-  /* or 33px */
-
-
-color: #5C5C5C;
+  line-height: 150%;   /* or 33px */
+  color: #5C5C5C;
 }
 
 .button{
-  font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -95,7 +101,6 @@ color: #5C5C5C;
 
 /* nav starts */
 #company-name {
-  font-family: 'IBM Plex Sans';
   font-size: 18px;
   font-weight: 800;
   line-height: 23px;
@@ -378,7 +383,7 @@ img {
   margin-top: 0;
 }
 
-#service-container {
+#service-container{
   margin-left: 0;
   margin-right: 0;
 }
@@ -460,11 +465,11 @@ img {
 
 /*  ------------------------------------------------------------------------------------  */
 
-/* projects slider */
 #projects{
   max-width: 1100px;
   width: calc(100%-64px);
   margin: 0 auto;
+  padding-left: 72px;
 }
 
 .cards{
@@ -472,36 +477,33 @@ img {
   margin: 36px auto;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
-  height: 314px;  
-  width: 374px;    /*  h:351, w:450  */
+  height: 351px;
+  width: 450px;
   display: flex;
   justify-content: center;
   position: relative;
   text-align: center;
   place-self: center;
   zoom:1.1;
-  background-color: chartreuse;
 }
 
 .boxframe {
   position: absolute;
   border: 1px solid #000000;
   z-index: 0;
-  width: 349px;       /*  h:300, w:350  */
-  height: 287px;
+  width: 350px;
+  height: 300px;
   margin: 36px auto;
-  background-color: crimson;
 }
 
 #project-name {
   z-index: 1;
-  margin: 5px 0;
+  margin: 10px 0;
   padding-left: -16px;
-  font-family: 'IBMPlexSansBold';
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -512,28 +514,27 @@ img {
 }
 
 .project-image{
-  margin: 2px auto;
-  width: 374px;
-  height: 209px;      /*  h:232, w:380  */
+  margin: 54px auto;
+  width: 380px;
+  height: 232px;
   z-index: 2;
   position: absolute;
 }
 
 #img-project
 {
-  width: 374px;
-  height: 209px;
+  width: 380px;
+  height: 232px;
 }
 
 .sub-text{
   position: absolute;
   justify-content: end;
-  bottom: 6px;
+  bottom: 22px;
   right: 42px;
 }
 
 .status {
-  font-family: 'IBMPlexSansBold';
   text-align: end;
   font-style: normal;
   font-weight: bold;
@@ -543,7 +544,6 @@ img {
 }
 
 .subtitle {
-  font-family: 'IBMPlexSansBold';
   text-align: end;
   font-style: normal;
   font-weight: bold;
@@ -554,9 +554,10 @@ img {
 
 /* slider */
 .slider {
+
   border-radius: 8px;
-  width: 374px;
-  height: 209px;     /* img same */
+  width: 380px;
+  height: 232px;
 }
 
 .wrapper {
@@ -578,8 +579,8 @@ img {
 }
 
 .slide {
-  width: 374px;
-  height: 209px;    /* img same */
+  width: 380px;
+  height: 232px;
   cursor: pointer;
   float: left;
   display: flex;
@@ -596,8 +597,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    bottom: 52px;
-    left: 0px;
+    bottom: 62px;
+    left:10px;
     position: absolute;
 }
 
@@ -632,6 +633,27 @@ img {
   transform: scale(0.8);
 }
 
+/*  ------------------------------------------------------------------------------------  */
+#grey-content-2 {
+  max-width: 1110px;
+  margin: 10px auto;
+  height: auto;
+  padding-left: 72px;
+}
+
+.list-image {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.service-img {
+  width: 350px;
+  height: 53px;
+  padding: 20px;
+}
+
 
 /* footer starts */
 .footer-container {
@@ -651,7 +673,6 @@ img {
 }
 
 .footer-company-name-h2{
-  font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
