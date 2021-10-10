@@ -1,711 +1,773 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" href="ico/stroymep.ico?v=v1">
-      <link rel="icon" sizes="16x16 32x32 64x64" href="ico/stroymep.ico?v=v1">
-      <link rel="icon" type="image/png" sizes="196x196" href="ico/stroymep-192.png?v=v1">
-      <link rel="icon" type="image/png" sizes="160x160" href="ico/stroymep-160.png?v=v1">
-      <link rel="icon" type="image/png" sizes="96x96" href="ico/stroymep-96.png?v=v1">
-      <link rel="icon" type="image/png" sizes="64x64" href="ico/stroymep-64.png?v=v1">
-      <link rel="icon" type="image/png" sizes="32x32" href="ico/stroymep-32.png?v=v1">
-      <link rel="icon" type="image/png" sizes="16x16" href="ico/stroymep-16.png?v=v1">
-      <link rel="apple-touch-icon" href="ico/stroymep-57.png?v=v1">
-      <link rel="apple-touch-icon" sizes="114x114" href="ico/stroymep-114.png?v=v1">
-      <link rel="apple-touch-icon" sizes="72x72" href="ico/stroymep-72.png?v=v1">
-      <link rel="apple-touch-icon" sizes="144x144" href="ico/stroymep-144.png?v=v1">
-      <link rel="apple-touch-icon" sizes="60x60" href="ico/stroymep-60.png?v=v1">
-      <link rel="apple-touch-icon" sizes="120x120" href="ico/stroymep-120.png?v=v1">
-      <link rel="apple-touch-icon" sizes="76x76" href="ico/stroymep-76.png?v=v1">
-      <link rel="apple-touch-icon" sizes="152x152" href="ico/stroymep-152.png?v=v1">
-      <link rel="apple-touch-icon" sizes="180x180" href="ico/stroymep-180.png?v=v1">
-      <meta name="msapplication-TileColor" content="#FFFFFF">
-      <meta name="msapplication-TileImage" content="ico/stroymep-144.png?v=v1">
-      <meta name="msapplication-config" content="ico/browserconfig.xml">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/header.css">
-      <link rel="stylesheet" href="css/hero.css">
-      <link rel="stylesheet" href="css/projects.css">
-      <link rel="stylesheet" href="css/services.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-      <script src="js/index.js"></script>
-      <title>Stroymep - Home </title>
-  </head>
 
-  <body>
-      <div class="header">
-        <nav id='nav'>
-            <div class="nav-left">
-              <img id="logo" src="svg/logo.svg" onclick="window.location='index.html'">
-              <a href="index.html" id="company-name" >Stroymep</a>
-              
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <ul class="nav-right" >
-                <li><a href="index.html" style="color: #005CB9;">Home</a></li>
-                <li><a href="#projects-anchor">Projects</a></li>
-                <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#grey-content-2">Services</a></li>
-                <li><a href="#contacts">Contact us</a></li>
-            </ul>
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+  <link rel="manifest" href="/ico/site.webmanifest">
+  <link rel="mask-icon" href="/ico/safari-pinned-tab.svg" color="#0093e9">
+  <link rel="shortcut icon" href="/ico/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/ico/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-              
-            <div class="burger" onclick="ToggleBurger(this)">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>  
+  <!--CSS Imports-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/projects.css">
+
+  <!--JS Imports-->
+  <script src="js/index.js"></script>
+  <script src="js/spyscroll.js"></script>
+  <title>Stroymep | Mep | Engineering </title>
+</head>
+
+<body id="home">
+  <div class="header" >
+    <nav id='nav'>
+      <div class="nav-left">
+        <img id="logo" src="svg/logo.svg" onclick="window.location='index.html'">
+        <a href="index.html" id="company-name">Stroymep</a>
+
       </div>
-      
-      <!-- welcome area -->
-      <section class="hero">
-        <div class="welcome-text">
-            <p>We are a<br>
-                <span style="color:#0000AD">Team of Experts </span><br>
-                in mep <br>engineering.</p>
+
+      <ul class="nav-right">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+
+
+      <div class="burger" onclick="ToggleBurger(this)">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </div>
+  <!-- welcome area -->
+  <section class="hero">
+    <div class="welcome-text">
+      <p>We are a<br>
+        <span style="color:#0000AD">Team of Experts </span><br>
+        in mep <br>engineering.
+      </p>
+    </div>
+
+    <div class="rhombus">
+      <div class="back-welcome-images">
+
+        <div class="mySlides1 fade">
+          <img src="img/nurly-zhol3.jpg" class="diamond-back">
         </div>
 
-            <div class="rhombus">
-              <div class="back-welcome-images">
-
-                <div class="mySlides1 fade">
-                  <img src="img/nurly-zhol3.jpg" class="diamond-back">
-                </div>
-                
-                <div class="mySlides1 fade">
-                  <img src="img/media-center3.jpg" class="diamond-back">
-                </div>
-                
-                <div class="mySlides1 fade">
-                  <img src="img/marriott.jpg" class="diamond-back" >
-                </div>
-                
-              </div>
-
-              <div class="front-welcome-images">
-
-                <div class="mySlides fade">
-                  <img src="img/marriott.jpg" class="diamond-front" >
-                </div>
-                
-                <div class="mySlides fade">
-                  <img src="img/nurly-zhol3.jpg" class="diamond-front" >
-                </div>
-                
-                <div class="mySlides fade">
-                  <img src="img/media-center3.jpg" class="diamond-front">
-                </div>
-                
-              </div>
-              
+        <div class="mySlides1 fade">
+          <img src="img/media-center3.jpg" class="diamond-back">
         </div>
-      </section>
 
-      <!-- projects button -->
-      <section id="project-container" >
-        <h3 class="text" id="project-text">Have a look at our<br> projects!</h3>
-
-        <div id="project-button" >
-          <button type="button" class="button" onclick="window.location ='#projects'">
-            See our work
-          </button>
+        <div class="mySlides1 fade">
+          <img src="img/marriott.jpg" class="diamond-back">
         </div>
-      </section>
 
-      <!-- about us area -->
-      <section class="grey-bg" class="grey" id="aboutus" >
-        <section id="grey-content-1">
+      </div>
 
-          <section id="about-values" class="col align-self-start">
-            <section id="who-are-we">
-              <h3>Who are we?</h3>
-              <p class="p-text">Based in <span class="highlight-blue">Nur-Sultan, Kazakhstan</span>, we are a leading engineering-focused company 
-                specialising in designing <span class="highlight-blue">mechanical</span> and <span class="highlight-blue">electrical systems</span>  in buildings. 
-                We provide complete, collaborative, end-to-end solutions in the entire MEP sector, 
-                infusing life into new buildings and sustaining it in others.</p>
-            </section>
-    
-            <section id="our-values">
-              <h3>Our values</h3>
-              <p class="p-text">Stroymep has been gaining momentum since its establishment in 2014, 
-                by collaborating with firms both in Kazakhstan and abroad. 
-                Our meticulous approach towards every client's needs has allowed for our <span class="highlight-blue">indisputable reputation</span>. 
-                The quality of our projects is our top priority, hence we establish <span class="highlight-blue">effective</span> <span class="highlight-blue">communication</span> with our 
-                clients in order to meet the standards and satisfy your needs.</p>
-            </section>
-          </section>
-  
-          <section id="team-services" class="col align-self-center">
-            <section id="our-team">
-              <h3>Our team</h3>
-              <p class="p-text">Our company consists of a <span class="highlight-blue">team</span> of highly-skilled <span class="highlight-blue">experts</span> which have laid their hands on many 
-                <span class="highlight-blue">prestigious</span> projects <a href="pages/projects.html" target="_blank">(See our projects here)</a>. Working in tight schedules is
-                second nature to our team. This allows us to complete our clients’ projects in the shortest time
-                periods.</p>
-            </section>
-      
-            <!-- service button -->
-            <section id="service-container">
-              <h3 class="text" id="service-text">Take a look at our complete list of services</h3>
-      
-              <div id="service-button">
-                <button type="button" class="button" onclick="window.location ='pages/projects.html'">
-                  Services
-                </button>
-              </div>
-            </section>
-          </section>
+      <div class="front-welcome-images">
 
+        <div class="mySlides fade">
+          <img src="img/marriott.jpg" class="diamond-front">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/nurly-zhol3.jpg" class="diamond-front">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/media-center3.jpg" class="diamond-front">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- projects button -->
+  <section id="project-container">
+    <h3 class="text" id="project-text">Have a look at our<br> projects!</h3>
+
+    <div id="project-button">
+      <button type="button" class="button" onclick="window.location ='#projects'">
+        See our work
+      </button>
+    </div>
+  </section>
+
+  <!-- about us area -->
+  <section class="grey-bg" class="grey" id="about" style="padding-top: 38px; margin-top: -38px;">
+    <section id="grey-content-1">
+
+      <section id="about-values" class="col align-self-start">
+        <section id="who-are-we">
+          <h3>Who are we?</h3>
+          <p class="p-text">Based in <span class="highlight-blue">Nur-Sultan, Kazakhstan</span>, we are a leading
+            engineering-focused company
+            specialising in designing <span class="highlight-blue">mechanical</span> and <span
+              class="highlight-blue">electrical systems</span> in buildings.
+            We provide complete, collaborative, end-to-end solutions in the entire MEP sector,
+            infusing life into new buildings and sustaining it in others.</p>
+        </section>
+
+        <section id="our-values">
+          <h3>Our values</h3>
+          <p class="p-text">Stroymep has been gaining momentum since its establishment in 2014,
+            by collaborating with firms both in Kazakhstan and abroad.
+            Our meticulous approach towards every client's needs has allowed for our <span
+              class="highlight-blue">indisputable reputation</span>.
+            The quality of our projects is our top priority, hence we establish <span
+              class="highlight-blue">effective</span> <span class="highlight-blue">communication</span> with our
+            clients in order to meet the standards and satisfy your needs.</p>
         </section>
       </section>
 
-      <!-- ------------------------------------------------------------------------------------  -->
-      <!-- projects -->
-      <section id="projects">
-        <h3 id="projects-anchor" style="padding-top: 68px; margin-top: -68px;">Our new projects</h3>
-        <section class="cards">
-          <div class="card">
-            <h2 id="project-name">Petropavlovsk City Hospital</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/petropavl2.jpeg" loading="lazy" id="img-project" alt="Petropavlovsk City Hospital"></span>
-                        <span class="slide"><img src="/img/petropavl1.jpeg" loading="lazy" id="img-project" alt="Petropavlovsk City Hospital"></span>
-                        <span class="slide"><img src="/img/petrpavl3.png" loading="lazy" id="img-project" alt="Petropavlovsk City Hospital"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Petropavlovsk, Kazakhstan</p>
-                <p class="status"> <span style="color: #0000AD">New</span> - Ongoing project</p>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <h2 id="project-name">Nur-Sultan City Hospital</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/yda-nursultan2.jpg" loading="lazy" id="img-project" alt="Nur-Sultan City Hospital"></span>
-                        <span class="slide"><img src="/img/yda-nursultan.jpg" loading="lazy" id="img-project" alt="Nur-Sultan City Hospital"></span>
-                        <span class="slide"><img src="/img/yda-nursultan3.png" loading="lazy" id="img-project" alt="Nur-Sultan City Hospital"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Nur-Sultan, Kazakhstan</p>
-                <p class="status"><span style="color: #0000AD">New</span> - Ongoing project</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Turkistan City Hospital</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/Hospital.jpg" loading="lazy" id="img-project" alt="Turkistan City Hospital"></span>
-                        <span class="slide"><img src="/img/Hospital2.jpg" loading="lazy" id="img-project" alt="Turkistan City Hospital"></span>
-                        <span class="slide"><img src="/img/Hospital3.jpg" loading="lazy" id="img-project" alt="Turkistan City Hospital"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Turkistan, Kazakhstan</p>
-                <p class="status">Ongoing project</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Ahmed Yassawi Museum</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/museum2.jpg" loading="lazy" id="img-project" alt="Ahmed Yassawi Museum"></span>
-                        <span class="slide"><img src="/img/museum.jpeg" loading="lazy" id="img-project" alt="Ahmed Yassawi Museum"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Turkistan, Kazakhstan</p>
-                <p class="status">Ongoing project</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Grand Mosque</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/mosque.png" loading="lazy" id="img-project" alt="Mosque Nur-Sultan"></span>
-                        <span class="slide"><img src="/img/mosque2.png" loading="lazy" id="img-project" alt="Mosque Nur-Sultan"></span>
-                        <span class="slide"><img src="/img/mosque3.jpg" loading="lazy" id="img-project" alt="Mosque Nur-Sultan"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Nur-Sultan, Kazakhstan</p>
-                <p class="status">Ongoing project</p>
-            </div>
-          </div>
+      <section id="team-services" class="col align-self-center">
+        <section id="our-team">
+          <h3>Our team</h3>
+          <p class="p-text">Our company consists of a <span class="highlight-blue">team</span> of highly-skilled <span
+              class="highlight-blue">experts</span> which have laid their hands on many
+            <span class="highlight-blue">prestigious</span> projects <a href="pages/projects.html" target="_blank">(See
+              our projects here)</a>. Working in tight schedules is
+            second nature to our team. This allows us to complete our clients’ projects in the shortest time
+            periods.
+          </p>
         </section>
 
-        <h3 id="completed-projects">Our completed projects</h3>
-        <section class="cards">
-          
-          <div class="card">
-            <h2 id="project-name">Nazarbayev Center</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/naz-center.jpg" loading="lazy" id="img-project" alt="Nazarbayev Center"></span>
-                        <span class="slide"><img src="/img/naz-center2.jpg" loading="lazy" id="img-project" alt="Nazarbayev Center"></span>
-                        <span class="slide"><img src="/img/naz-center3.jpg" loading="lazy" id="img-project" alt="Nazarbayev Center"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Nur-Sultan, Kazakhstan</p>
-                <p class="status">Completed in 2019</p>
-            </div>
-          </div>
+        <!-- service button -->
+        <section id="service-container">
+          <h3 class="text" id="service-text">Take a look at our complete list of services</h3>
 
-          <div class="card">
-            <h2 id="project-name">Nurly-Zhol Railway station</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/nurly-zhol.jpg" loading="lazy" id="img-project" alt="Nurly-Zhol railway station "></span>
-                        <span class="slide"><img src="/img/nurly-zhol2.jpg" loading="lazy" id="img-project" alt="Nurly-Zhol railway station"></span>
-                        <span class="slide"><img src="/img/nurly-zhol3.jpg" loading="lazy" id="img-project" alt="Nurly-Zhol railway station"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Nur-Sultan, Kazakhstan</p>
-                <p class="status">Completed in 2017</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Armankala Residential Area</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/armankala.jpg" loading="lazy" id="img-project" alt="Armankala Complex"></span>
-                        <span class="slide"><img src="/img/armankala3.jpg" loading="lazy" id="img-project" alt="Armankala Complex"></span>
-                        <span class="slide"><img src="/img/armankala2.jpg" loading="lazy" id="img-project" alt="Armankala Complex"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Nur-Sultan, Kazakhstan</p>
-                <p class="status">Completed in 2016</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Hampton Hotel</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/Hampton.png" loading="lazy" id="img-project" alt="Hampton Hotel"></span>
-                        <span class="slide"><img src="/img/Hampton2.png" loading="lazy" id="img-project" alt="Hampton Hotel"></span>
-                        <span class="slide"><img src="/img/Hampton3.jpg" loading="lazy" id="img-project" alt="Hampton Hotel"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Turkistan, Kazakhstan</p>
-                <p class="status">Completed in 2020</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Expo exhibition in 2017</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/expo2017_1.jpeg" loading="lazy" id="img-project" alt="Expo 2017"></span>
-                        <span class="slide"><img src="/img/expo2017_2.jpg" loading="lazy" id="img-project" alt="Expo 2017"></span>
-                        <span class="slide"><img src="/img/expo2017_3.jpg" loading="lazy" id="img-project" alt="Expo 2017"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Nur-Sultan, Kazakhstan</p>
-                <p class="status">Completed in 2017</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Library of the First President</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/library3.jpg" loading="lazy" id="img-project" alt="Library of the First President"></span>
-                        <span class="slide"><img src="/img/library2.jpg" loading="lazy" id="img-project" alt="Library of the First President"></span>
-                        <span class="slide"><img src="/img/library.jpg" loading="lazy" id="img-project" alt="Library of the First President"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Nur-Sultan, Kazakhstan</p>
-                <p class="status">Completed in 2013</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Media Center</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/media-center.png" loading="lazy" id="img-project" alt="Media Center"></span>
-                        <span class="slide"><img src="/img/media-center2.jpg" loading="lazy" id="img-project" alt="Media Center"></span>
-                        <span class="slide"><img src="/img/media-center3.jpg" loading="lazy" id="img-project" alt="Media Center"></span>
-                        <span class="slide"><img src="/img/media-center4.jpg" loading="lazy" id="img-project" alt="Media Center"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Nur-Sultan, Kazakhstan</p>
-                <p class="status">Completed in 2015</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Glass Pavilion, NU</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/glass-pavilion.jpg" loading="lazy" id="img-project" alt="Glass Pavilion, NU"></span>
-                        <span class="slide"><img src="/img/glass-pavilion2.jpg" loading="lazy" id="img-project" alt="Glass Pavilion, NU"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Nur-Sultan, Kazakhstan</p>
-                <p class="status">Completed in 2017</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Gorkiy Plaza</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/gorkiy-plaza.jpg" loading="lazy" id="img-project" alt="Gorkiy Plaza"></span>
-                        <span class="slide"><img src="/img/gorkiy-plaza2.jpg" loading="lazy" id="img-project" alt="Gorkiy Plaza"></span>
-                        <span class="slide"><img src="/img/gorkiy-plaza3.jpg" loading="lazy" id="img-project" alt="Gorkiy Plaza"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Sochi, Russia</p>
-                <p class="status">Completed in 2013</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Novotel Resort</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/novotel.jpg" loading="lazy" id="img-project" alt="Novotel Sochi"></span>
-                        <span class="slide"><img src="/img/novotel2.jpg" loading="lazy" id="img-project" alt="Novotel Sochi"></span>
-                        <span class="slide"><img src="/img/novotel3.jpg" loading="lazy" id="img-project" alt="Novotel Sochi"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Sochi, Russia</p>
-                <p class="status">Completed in 2014</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Olympic Village</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/olympic1.jpg" loading="lazy" id="img-project" alt="Olympic Village"></span>
-                        <span class="slide"><img src="/img/olympic2.jpg" loading="lazy" id="img-project" alt="Olympic Village"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Sochi, Russia</p>
-                <p class="status">Completed in 2014</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Marriott Hotel</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/marriott.jpg" loading="lazy" id="img-project" alt="Marriott Hotel"></span>
-                        <span class="slide"><img src="/img/marriott2.jpg" loading="lazy" id="img-project" alt="Marriott Hotel"></span>
-                        <span class="slide"><img src="/img/marriott3.jpg" loading="lazy" id="img-project" alt="Marriott Hotel"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Sochi, Russia</p>
-                <p class="status">Completed in 2013</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Swissotel Krasnaya Polyana</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/swissotel-sochi.jpg" loading="lazy" id="img-project" alt="Swissotel Krasnaya Polyana"></span>
-                        <span class="slide"><img src="/img/swissotel-sochi2.jpg" loading="lazy" id="img-project" alt="Swissotel Krasnaya Polyana"></span>
-                        <span class="slide"><img src="/img/swissotel-sochi3.jpg" loading="lazy" id="img-project" alt="Swissotel Krasnaya Polyana"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Sochi, Russia</p>
-                <p class="status">Completed in 2014</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Rixos Hotel Sochi</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/rixos-sochi.jpg" loading="lazy" id="img-project" alt="Rixos Hotel Sochi"></span>
-                        <span class="slide"><img src="/img/rixos-sochi2.jpg" loading="lazy" id="img-project" alt="Rixos Hotel Sochi"></span>
-                        <span class="slide"><img src="/img/rixos-sochi3.jpg" loading="lazy" id="img-project" alt="Rixos Hotel Sochi"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Sochi, Russia</p>
-                <p class="status">Completed in 2013</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Rixos Khan-Shatyr Residential</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/rixos-astana.jpg" loading="lazy" id="img-project" alt="Rixos Khan-Shatyr Residential Complex"></span>
-                        <span class="slide"><img src="/img/rixos-astana2.jpg" loading="lazy" id="img-project" alt="Rixos Khan-Shatyr Residential Complex"></span>
-                        <span class="slide"><img src="/img/rixos-astana3.jpg" loading="lazy" id="img-project" alt="Rixos Khan-Shatyr Residential Complex"></span>
-                        <span class="slide"><img src="/img/rixos-astana4.jpg" loading="lazy" id="img-project" alt="Rixos Khan-Shatyr Residential Complex"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Nur-Sultan, Kazakhstan</p>
-                <p class="status">Completed in 2013</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 id="project-name">Rixos Burabay Hotel</h2>
-            <div class="project-image">
-                <div id="slider" class="slider">
-                    <div class="wrapper">
-                      <div id="items" class="items">
-                        <span class="slide"><img src="/img/rixos-brv.jpg" loading="lazy" id="img-project" alt="Rixos Burabay Hotel"></span>
-                        <span class="slide"><img src="/img/rixos-brv2.jpg" loading="lazy" id="img-project" alt="Rixos Burabay Hotel"></span>
-                        <span class="slide"><img src="/img/rixos-brv3.jpg" loading="lazy" id="img-project" alt="Rixos Burabay Hotel"></span>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="boxframe">
-            </div>
-            <div class="slider-controls">
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
-            <div class="sub-text">
-                <p class="subtitle">Burabay, Kazakhstan</p>
-                <p class="status">Completed in 2012</p>
-            </div>
+          <div id="service-button">
+            <button type="button" class="button" onclick="window.location ='pages/projects.html'">
+              Services
+            </button>
           </div>
         </section>
-
       </section>
 
-      <!-- ------------------------------------------------------------------------------------  -->
-      <!-- services -->
-      <section class="grey-bg" class="grey">
-        <section id="grey-content-2">
-          <h3>Services we provide</h3>
+    </section>
+  </section>
+
+  <!-- ------------------------------------------------------------------------------------  -->
+  <!-- projects -->
+  <section id="projects" style="padding-top: 76px; margin-top: -76px;">
+    <h3 id="projects-anchor" >Our new projects</h3>
+    <section class="cards">
+      <div class="card">
+        <h2 id="project-name">Petropavlovsk City Hospital</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/petropavl2.jpeg" loading="lazy" id="img-project"
+                    alt="Petropavlovsk City Hospital"></span>
+                <span class="slide"><img src="img/petropavl1.jpeg" loading="lazy" id="img-project"
+                    alt="Petropavlovsk City Hospital"></span>
+                <span class="slide"><img src="img/petrpavl3.png" loading="lazy" id="img-project"
+                    alt="Petropavlovsk City Hospital"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Petropavlovsk, Kazakhstan</p>
+          <p class="status"> <span style="color: #0000AD">New</span> - Ongoing project</p>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h2 id="project-name">Nur-Sultan City Hospital</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/yda-nursultan2.jpg" loading="lazy" id="img-project"
+                    alt="Nur-Sultan City Hospital"></span>
+                <span class="slide"><img src="img/yda-nursultan.jpg" loading="lazy" id="img-project"
+                    alt="Nur-Sultan City Hospital"></span>
+                <span class="slide"><img src="img/yda-nursultan3.png" loading="lazy" id="img-project"
+                    alt="Nur-Sultan City Hospital"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Nur-Sultan, Kazakhstan</p>
+          <p class="status"><span style="color: #0000AD">New</span> - Ongoing project</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Turkistan City Hospital</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/Hospital.jpg" loading="lazy" id="img-project"
+                    alt="Turkistan City Hospital"></span>
+                <span class="slide"><img src="img/Hospital2.jpg" loading="lazy" id="img-project"
+                    alt="Turkistan City Hospital"></span>
+                <span class="slide"><img src="img/Hospital3.jpg" loading="lazy" id="img-project"
+                    alt="Turkistan City Hospital"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Turkistan, Kazakhstan</p>
+          <p class="status">Ongoing project</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Ahmed Yassawi Museum</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/museum2.jpg" loading="lazy" id="img-project"
+                    alt="Ahmed Yassawi Museum"></span>
+                <span class="slide"><img src="img/museum.jpeg" loading="lazy" id="img-project"
+                    alt="Ahmed Yassawi Museum"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Turkistan, Kazakhstan</p>
+          <p class="status">Ongoing project</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Grand Mosque</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/mosque.png" loading="lazy" id="img-project"
+                    alt="Mosque Nur-Sultan"></span>
+                <span class="slide"><img src="img/mosque2.png" loading="lazy" id="img-project"
+                    alt="Mosque Nur-Sultan"></span>
+                <span class="slide"><img src="img/mosque3.jpg" loading="lazy" id="img-project"
+                    alt="Mosque Nur-Sultan"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Nur-Sultan, Kazakhstan</p>
+          <p class="status">Ongoing project</p>
+        </div>
+      </div>
+    </section>
+
+    <h3 id="completed-projects">Our completed projects</h3>
+    <section class="cards">
+
+      <div class="card">
+        <h2 id="project-name">Nazarbayev Center</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/naz-center.jpg" loading="lazy" id="img-project"
+                    alt="Nazarbayev Center"></span>
+                <span class="slide"><img src="img/naz-center2.jpg" loading="lazy" id="img-project"
+                    alt="Nazarbayev Center"></span>
+                <span class="slide"><img src="img/naz-center3.jpg" loading="lazy" id="img-project"
+                    alt="Nazarbayev Center"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Nur-Sultan, Kazakhstan</p>
+          <p class="status">Completed in 2019</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Nurly-Zhol Railway station</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/nurly-zhol.jpg" loading="lazy" id="img-project"
+                    alt="Nurly-Zhol railway station "></span>
+                <span class="slide"><img src="img/nurly-zhol2.jpg" loading="lazy" id="img-project"
+                    alt="Nurly-Zhol railway station"></span>
+                <span class="slide"><img src="img/nurly-zhol3.jpg" loading="lazy" id="img-project"
+                    alt="Nurly-Zhol railway station"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Nur-Sultan, Kazakhstan</p>
+          <p class="status">Completed in 2017</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Armankala Residential Area</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/armankala.jpg" loading="lazy" id="img-project"
+                    alt="Armankala Complex"></span>
+                <span class="slide"><img src="img/armankala3.jpg" loading="lazy" id="img-project"
+                    alt="Armankala Complex"></span>
+                <span class="slide"><img src="img/armankala2.jpg" loading="lazy" id="img-project"
+                    alt="Armankala Complex"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Nur-Sultan, Kazakhstan</p>
+          <p class="status">Completed in 2016</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Hampton Hotel</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/Hampton.png" loading="lazy" id="img-project"
+                    alt="Hampton Hotel"></span>
+                <span class="slide"><img src="img/Hampton2.png" loading="lazy" id="img-project"
+                    alt="Hampton Hotel"></span>
+                <span class="slide"><img src="img/Hampton3.jpg" loading="lazy" id="img-project"
+                    alt="Hampton Hotel"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Turkistan, Kazakhstan</p>
+          <p class="status">Completed in 2020</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Expo exhibition in 2017</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/expo2017_1.jpeg" loading="lazy" id="img-project"
+                    alt="Expo 2017"></span>
+                <span class="slide"><img src="img/expo2017_2.jpg" loading="lazy" id="img-project"
+                    alt="Expo 2017"></span>
+                <span class="slide"><img src="img/expo2017_3.jpg" loading="lazy" id="img-project"
+                    alt="Expo 2017"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Nur-Sultan, Kazakhstan</p>
+          <p class="status">Completed in 2017</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Library of the First President</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/library3.jpg" loading="lazy" id="img-project"
+                    alt="Library of the First President"></span>
+                <span class="slide"><img src="img/library2.jpg" loading="lazy" id="img-project"
+                    alt="Library of the First President"></span>
+                <span class="slide"><img src="img/library.jpg" loading="lazy" id="img-project"
+                    alt="Library of the First President"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Nur-Sultan, Kazakhstan</p>
+          <p class="status">Completed in 2013</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Media Center</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/media-center.png" loading="lazy" id="img-project"
+                    alt="Media Center"></span>
+                <span class="slide"><img src="img/media-center2.jpg" loading="lazy" id="img-project"
+                    alt="Media Center"></span>
+                <span class="slide"><img src="img/media-center3.jpg" loading="lazy" id="img-project"
+                    alt="Media Center"></span>
+                <span class="slide"><img src="img/media-center4.jpg" loading="lazy" id="img-project"
+                    alt="Media Center"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Nur-Sultan, Kazakhstan</p>
+          <p class="status">Completed in 2015</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Glass Pavilion, NU</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/glass-pavilion.jpg" loading="lazy" id="img-project"
+                    alt="Glass Pavilion, NU"></span>
+                <span class="slide"><img src="img/glass-pavilion2.jpg" loading="lazy" id="img-project"
+                    alt="Glass Pavilion, NU"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Nur-Sultan, Kazakhstan</p>
+          <p class="status">Completed in 2017</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Gorkiy Plaza</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/gorkiy-plaza.jpg" loading="lazy" id="img-project"
+                    alt="Gorkiy Plaza"></span>
+                <span class="slide"><img src="img/gorkiy-plaza2.jpg" loading="lazy" id="img-project"
+                    alt="Gorkiy Plaza"></span>
+                <span class="slide"><img src="img/gorkiy-plaza3.jpg" loading="lazy" id="img-project"
+                    alt="Gorkiy Plaza"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Sochi, Russia</p>
+          <p class="status">Completed in 2013</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Novotel Resort</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/novotel.jpg" loading="lazy" id="img-project"
+                    alt="Novotel Sochi"></span>
+                <span class="slide"><img src="img/novotel2.jpg" loading="lazy" id="img-project"
+                    alt="Novotel Sochi"></span>
+                <span class="slide"><img src="img/novotel3.jpg" loading="lazy" id="img-project"
+                    alt="Novotel Sochi"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Sochi, Russia</p>
+          <p class="status">Completed in 2014</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Olympic Village</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/olympic1.jpg" loading="lazy" id="img-project"
+                    alt="Olympic Village"></span>
+                <span class="slide"><img src="img/olympic2.jpg" loading="lazy" id="img-project"
+                    alt="Olympic Village"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Sochi, Russia</p>
+          <p class="status">Completed in 2014</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Marriott Hotel</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/marriott.jpg" loading="lazy" id="img-project"
+                    alt="Marriott Hotel"></span>
+                <span class="slide"><img src="img/marriott2.jpg" loading="lazy" id="img-project"
+                    alt="Marriott Hotel"></span>
+                <span class="slide"><img src="img/marriott3.jpg" loading="lazy" id="img-project"
+                    alt="Marriott Hotel"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Sochi, Russia</p>
+          <p class="status">Completed in 2013</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Swissotel Krasnaya Polyana</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/swissotel-sochi.jpg" loading="lazy" id="img-project"
+                    alt="Swissotel Krasnaya Polyana"></span>
+                <span class="slide"><img src="img/swissotel-sochi2.jpg" loading="lazy" id="img-project"
+                    alt="Swissotel Krasnaya Polyana"></span>
+                <span class="slide"><img src="img/swissotel-sochi3.jpg" loading="lazy" id="img-project"
+                    alt="Swissotel Krasnaya Polyana"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Sochi, Russia</p>
+          <p class="status">Completed in 2014</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Rixos Hotel Sochi</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/rixos-sochi.jpg" loading="lazy" id="img-project"
+                    alt="Rixos Hotel Sochi"></span>
+                <span class="slide"><img src="img/rixos-sochi2.jpg" loading="lazy" id="img-project"
+                    alt="Rixos Hotel Sochi"></span>
+                <span class="slide"><img src="img/rixos-sochi3.jpg" loading="lazy" id="img-project"
+                    alt="Rixos Hotel Sochi"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Sochi, Russia</p>
+          <p class="status">Completed in 2013</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Rixos Khan-Shatyr Residential</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/rixos-astana.jpg" loading="lazy" id="img-project"
+                    alt="Rixos Khan-Shatyr Residential Complex"></span>
+                <span class="slide"><img src="img/rixos-astana2.jpg" loading="lazy" id="img-project"
+                    alt="Rixos Khan-Shatyr Residential Complex"></span>
+                <span class="slide"><img src="img/rixos-astana3.jpg" loading="lazy" id="img-project"
+                    alt="Rixos Khan-Shatyr Residential Complex"></span>
+                <span class="slide"><img src="img/rixos-astana4.jpg" loading="lazy" id="img-project"
+                    alt="Rixos Khan-Shatyr Residential Complex"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Nur-Sultan, Kazakhstan</p>
+          <p class="status">Completed in 2013</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="project-name">Rixos Burabay Hotel</h2>
+        <div class="project-image">
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="items" class="items">
+                <span class="slide"><img src="img/rixos-brv.jpg" loading="lazy" id="img-project"
+                    alt="Rixos Burabay Hotel"></span>
+                <span class="slide"><img src="img/rixos-brv2.jpg" loading="lazy" id="img-project"
+                    alt="Rixos Burabay Hotel"></span>
+                <span class="slide"><img src="img/rixos-brv3.jpg" loading="lazy" id="img-project"
+                    alt="Rixos Burabay Hotel"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxframe">
+        </div>
+        <div class="slider-controls">
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div>
+        <div class="sub-text">
+          <p class="subtitle">Burabay, Kazakhstan</p>
+          <p class="status">Completed in 2012</p>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ------------------------------------------------------------------------------------  -->
+  <!-- services -->
+  <section class="grey-bg" class="grey" id="services" style="padding-top: 68px; margin-top: -68px;">
+    <section id="grey-content-2">
+      <h3>Services we provide</h3>
 
           <div id="project-manage">
             <h4>Project Management</h4>
@@ -798,67 +860,120 @@
         
       </section>
 
-      <footer>
-        <div class="footer-container">
-          <div class="footer-company-name">
-            <h2 class="footer-company-name-h2">Stroymep 2021 ©</h2>
-          </div>
+      <div class="list-image">
+        <div class="img"><img class="service-img" src="img/image 19.png"></img></div>
+
+        <div>
+          <h4>Mechanical Engineering</h4>
+          <p class="p-text">Developing custom system solutions tailored to your needs, maximizing energy efficiency and
+            minimizing construction cost.
+          <ul class="list">
+            <li>Heating, Ventilating & Air Conditioning (HVAC) systems
+            <li>Exhaust systems</li>
+            <li>Direct digital control (DDC) systems</li>
+            <li>Chilled & Hot Water distribution systems</li>
+            <li>Outside air pretreatment & dehumidification</li>
+            <li>Natatorium dehumidification</li>
+            <li>Dessicant dehumidification</li>
+            <li>Lab fume hood, airflow & monitoring systems</li>
+            <li>Heat recovery</li>
+            <li>Ground loop water source heat pumps</li>
+          </ul>
+          </p>
         </div>
-      </footer>
+      </div>
+
+      <div class="list-image">
+        <div class="img"> <img class="service-img" src="img/image 20.png"></img></div>
+
+        <div>
+          <h4>Electrical Engineering</h4>
+          <p class="p-text">Developing custom system solutions tailored to your needs, maximizing energy efficiency and
+            minimizing construction cost.
+          <ul class="list">
+            <li>Power distribution systems
+            <li> Interior & Exterior lighting</li>
+            <li>Emergency & exit lighting</li>
+            <li>Sports lighting</li>
+            <li>Dimming systems</li>
+            <li>Backup power generators</li>
+            <li>Uninterruptible power supplies (UPS’s)</li>
+            <li>Lightning protection systems</li>
+            <li>Special grounding systems</li>
+            <li>Fire alarm systems</li>
+            <li>Outlets & raceway systems for voice & data cabling systems</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </section>
+  <section id="contact"></section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-company-name">
+        <h2 class="footer-company-name-h2">Stroymep 2021 ©</h2>
+      </div>
+    </div>
+  </footer>
 
 
-      <!-- sliders script -->
-      <script>
-        var slider = document.getElementsByClassName('slider'),
-        sliderItems = document.getElementsByClassName('items'),
-        prev = document.getElementsByClassName('control prev'),
-        next = document.getElementsByClassName('control next');
+  <!-- sliders script -->
+  <script>
+    var slider = document.getElementsByClassName('slider'),
+      sliderItems = document.getElementsByClassName('items'),
+      prev = document.getElementsByClassName('control prev'),
+      next = document.getElementsByClassName('control next');
 
-        var number = 21;
-        var x = 0;
-        for(x;x<number;x++)
-        {
-          slide(slider[x], sliderItems[x], prev[x], next[x]);
-        }
-      </script>
+    var number = 21;
+    var x = 0;
+    for (x; x < number; x++) {
+      slide(slider[x], sliderItems[x], prev[x], next[x]);
+    }
+  </script>
 
-      <!-- diamond script -->
-      <script>
-        var slideIndex = 0;
-        showSlides();
+  <!-- diamond script -->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var slides1 = document.getElementsByClassName("mySlides1");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides1[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      slides1[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 10000); // Change image every 2 seconds
+    }
+
+
+    // Sticky Header script
+
+    window.onscroll = function () { scrollFunction(); spyscroll(); };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 84 || document.documentElement.scrollTop > 84) {
+        document.getElementById("logo").style.height = '62px';
+        document.getElementById("logo").style.width = '62px';
+        document.getElementById("logo").style.padding = '5px';
+        document.getElementById("logo").style.marginRight = '10px';
+      } else {
+        document.getElementById("logo").style.height = '124px';
+        document.getElementById("logo").style.width = '124px';
+        document.getElementById("logo").style.padding = '15px';
+        document.getElementById("logo").style.marginRight = '0px';
         
-        function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var slides1 = document.getElementsByClassName("mySlides1");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none"; 
-            slides1[i].style.display = "none"; 
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          slides[slideIndex-1].style.display = "block";  
-          slides1[slideIndex-1].style.display = "block";  
-          setTimeout(showSlides, 10000); // Change image every 2 seconds
-        }
+      }
+    }
+  </script>
+</body>
 
-
-        // Sticky Header script
-
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-          if (document.body.scrollTop > 84 || document.documentElement.scrollTop > 84) {
-            document.getElementById("logo").style.height = '62px';
-            document.getElementById("logo").style.width = '62px';
-          } else {
-            document.getElementById("logo").style.height = '124px';
-            document.getElementById("logo").style.width = '124px';
-          }
-        }
-
-
-
-      </script>
-  </body>
 </html>
