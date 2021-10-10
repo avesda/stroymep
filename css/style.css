@@ -14,7 +14,6 @@ body {
 
 }
 
-
 /*Our custom fonts i guess. Gotta find a better way*/
 @font-face {
   font-family: IBMPlexSansBold;
@@ -80,7 +79,6 @@ h4 {
 
 
 /*About us texts*/
-
 .p-text, .list {
 
   font-family: "IBMPlexSansBold";
@@ -90,7 +88,6 @@ h4 {
   line-height: 150%;   /* or 33px */
   color: #5C5C5C;
 }
-
 
 .button{
   font-style: normal;
@@ -119,14 +116,11 @@ img {
   object-fit: cover;
 }
 
-
-
-
 /* project , serivce button starts */
 #project-container, #service-container{  
   position: relative;
   width: calc(100%-64px);
-  max-width: 1110px;
+  max-width: 1100px;
   margin: 64px auto;
   height: auto;
 }
@@ -225,23 +219,37 @@ img {
 
 /*  ------------------------------------------------------------------------------------  */
 #grey-content-2 {
-  max-width: 1110px;
+  max-width: 1100px;
   margin: 10px auto;
   height: auto;
-  padding-left: 72px;
+}
+
+#grey-content-2 > h3 {
+  padding-left: 32px;
+  padding-bottom: 25px;
 }
 
 .list-image {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 20px;
+  padding-left: 32px;
+  padding-bottom: 25px;
 }
 
-.service-img {
-  width: 350px;
-  height: 53px;
-  padding: 20px;
+.img {
+  height: 500px;
+  width: 100%;
+  padding-right: 30px;
+}
+
+#project-manage {
+  padding-left: 32px;
+  padding-bottom: 25px;
+}
+
+.list {
+  padding-left: 20px;
 }
 
 
