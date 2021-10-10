@@ -1,6 +1,19 @@
+
+/*Our custom fonts i guess. Gotta find a better way*/
+@font-face {
+  font-family: IBMPlexSansBold;
+  src: url(../font/IBMPlexSans-Bold.ttf);
+}
+@font-face {
+  font-family: IBMPlexSansReg;
+  src: url(../font/IBMPlexSans-Regular.ttf);
+}
+
 /* nav starts */
 
+/*Sticky Header*/
 .header{
+  overflow-anchor: none;
     background-color: rgb(255, 255, 255);
     top:0;
     position: sticky;
@@ -8,11 +21,10 @@
     z-index: 5;
   }
   #nav {
-  
+    
     margin:  auto;
-    max-width: 1260px;
+    max-width: 1100px;
     position: relative;
-    padding-left: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +48,7 @@
   }
   
   #logo {
-    transition: 0.2s; 
+    transition: 0.3s ease-in; 
     width: 124px;
     height: 124px;
     top: 18px;
@@ -46,7 +58,7 @@
   
   .nav-right{
   
-    margin-right: 20px;
+    margin-right: 0px;
     display: flex;
     
     justify-content: space-around;
@@ -67,13 +79,12 @@
     font-weight: 600;
   }
   
-  .nav-right > li > a:hover {
+  .nav-right > li > a:hover{
+    transition: 0.5s;
     color: #005CB9;
   }
   
-  .nav-right > li > a:hover {
-    color: #005CB9;
-  }
+
   
   .burger {
     margin-top: 8px;
@@ -100,3 +111,39 @@
     opacity: 0;
   }
   /* nav ends */
+
+
+  /*RESPONSIVE*/
+
+/* ipads */
+@media screen and (max-width: 992px) {
+  #nav{
+    padding-left: 0px;
+  }
+
+}/* phones */
+@media screen and (max-width: 576px) {
+  .nav-right {
+    position: absolute;
+    right: 0px;
+    flex-direction: column;
+    top: 8vh;
+    text-align: right;
+    right: 19px;
+    display: none;
+  }
+  .nav-right > li {
+    margin-right: 0px;
+    margin-top: 5px;
+  } 
+  .burger {
+    display: block;
+    margin-right: 19px;
+    cursor: pointer;
+  }  
+  .nav-right.open {
+    display: block;
+    z-index: 3;
+    background-color: white;
+  }
+}
