@@ -82,13 +82,7 @@ h4 {
 
 /*About us texts*/
 
-/*
-.p-text, ul > li {
-
-  Conflicts with header links 
-  so I kept .p-text only
-*/
-.p-text {
+.p-text, .list {
 
   font-family: "IBMPlexSansBold";
   font-style: normal;
