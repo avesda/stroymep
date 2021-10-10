@@ -6,22 +6,12 @@
 }
 
 body {
-  font-family: IBMPlexSansReg, sans-serif;
+  font-family: 'IBMPlexSansBold', sans-serif;
   font-style: normal;
   font-size: 16px;
   color: black; 
   height:100%;
 
-}
-
-.scrollspy-nav .scrollspy-indicator {
-  position: absolute;
-  height: 3px;
-  width: 0;
-  background: red;
-  bottom: 0;
-  left: 0;
-  transition: width 0.3s, left 0.1s;
 }
 
 /*Our custom fonts i guess. Gotta find a better way*/
