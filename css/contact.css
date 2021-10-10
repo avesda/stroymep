@@ -1,10 +1,11 @@
-#contacts {
+#contact {
+    padding-top: 64px;
     max-width: 1100px;
-    margin: 10px auto;
+    margin: 0 auto;
     height: auto;
   }
   
-  #contacts > h3 {
+  #contact > h3 {
     padding-top: 64px;
     padding-left: 32px;
     padding-bottom: 25px;

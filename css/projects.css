@@ -2,13 +2,13 @@
 
 
 #projects{
-  padding-top: 64px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 #projects-anchor, #completed-projects{
   padding-left: 32px;
+  padding-top: 64px;
 }
 
 
