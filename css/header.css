@@ -11,9 +11,11 @@
 
 /* nav starts */
 
+
+
 /*Sticky Header*/
-.header{
-  overflow-anchor: none;
+  .header{
+    overflow-anchor: none;
     background-color: rgb(255, 255, 255);
     top:0;
     position: sticky;
@@ -48,6 +50,7 @@
   }
   
   #logo {
+    padding: 15px;
     transition: 0.3s ease-in; 
     width: 124px;
     height: 124px;
@@ -60,7 +63,6 @@
   
     margin-right: 0px;
     display: flex;
-    
     justify-content: space-around;
   }
   
@@ -71,6 +73,7 @@
   
   }
   
+  
   .nav-right > li > a {
     font-family: IBMPlexSansReg;
     font-size: 18px;
@@ -78,14 +81,12 @@
     color: black;
     font-weight: 600;
   }
-  
+
+  .nav-right > li > a.active,
   .nav-right > li > a:hover{
-    transition: 0.5s;
     color: #005CB9;
   }
-  
 
-  
   .burger {
     margin-top: 8px;
     display: none;
