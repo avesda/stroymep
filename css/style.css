@@ -224,39 +224,8 @@ img {
 
 
 /*  ------------------------------------------------------------------------------------  */
-#grey-content-2 {
-  max-width: 1100px;
-  margin: 10px auto;
-  height: auto;
-}
 
-#grey-content-2 > h3 {
-  padding-left: 32px;
-  padding-bottom: 25px;
-}
 
-.list-image {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding-left: 32px;
-  padding-bottom: 25px;
-}
-
-.img {
-  height: 500px;
-  width: 100%;
-  padding-right: 30px;
-}
-
-#project-manage {
-  padding-left: 32px;
-  padding-bottom: 25px;
-}
-
-.list {
-  padding-left: 20px;
-}
 
 
 /* footer starts */

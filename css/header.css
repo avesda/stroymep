@@ -11,9 +11,8 @@
 
 /* nav starts */
 
-
-
 /*Sticky Header*/
+
   .header{
     overflow-anchor: none;
     background-color: rgb(255, 255, 255);
@@ -73,7 +72,6 @@
   
   }
   
-  
   .nav-right > li > a {
     font-family: IBMPlexSansReg;
     font-size: 18px;
@@ -107,11 +105,38 @@
   .line2.change {
     transform: rotate(45deg);
   }
+
   
-  .line3.change  {
-    opacity: 0;
-  }
-  /* nav ends */
+.nav-right > li > a:hover {
+  transition: 0.5s;
+  color: #005CB9;
+}
+
+.burger {
+  margin-top: 8px;
+  display: none;
+}
+
+.burger div{
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  margin: 6px 12px;
+  transition: 0.1s;
+}
+
+.line1.change {
+  transform: rotate(135deg) translate(7px,-5px);
+}
+
+.line2.change {
+  transform: rotate(45deg);
+}
+
+.line3.change  {
+  opacity: 0;
+}
+/* nav ends */
 
 
   /*RESPONSIVE*/
