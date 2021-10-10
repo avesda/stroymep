@@ -33,7 +33,7 @@ body {
 /*Backgroud Tricks from Rumessa*/
 .grey-bg {
   /*CANDIDATE 1:  background-color: #e2eeff;*/
-  background-color: #e2eeff;
+  background-color: #fafafa;
   height: auto;
   width: calc(100%-64px);
 }
@@ -41,9 +41,8 @@ body {
   width: calc(100%-64px);
 }
 
-section#projects:hover ~ .nav-right > li > a[href="#projects"] {
-  transition: 0.5s;
-  color: #005CB9;
+section#projects:hover ~ .header > #nav > .nav-right > li> a{
+  color: #8400ff;
 }
 
 /*Have a look at our projects! text*/
@@ -153,7 +152,7 @@ img {
   position: relative;
   text-align: center;
   padding-bottom: 10px;
-  padding-left: 46px;
+  padding-left: 36px;
 }
 
 #project-button > button {
@@ -173,7 +172,7 @@ img {
   position: relative;
   text-align: left;
   padding-bottom: 10px;
-  padding-left: 46px;
+  padding-left: 36px;
   width: 60%;
   height: inherit;
 }
@@ -196,7 +195,7 @@ img {
   position: relative;
   text-align: left;
   padding-bottom: 40px;
-  padding-left: 72px;
+  padding-left: 32px;
   width: 100%;
   height: auto;
 }
@@ -219,8 +218,8 @@ img {
 /* about + values + team + services ends */
 
 #grey-content-1 {
-  max-width: 1110px;
-  margin: 10px auto;
+  max-width: 1100px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
