@@ -16,7 +16,7 @@
     justify-content: space-between;
     flex-direction: row;
     padding-left: 32px;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
 }
   
 .img {
@@ -27,9 +27,34 @@
   
 #project-manage {
     padding-left: 32px;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
 }
   
 .list {
     padding-left: 20px;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 992px) {
+    .list-image {
+        flex-direction: column;
+    }
+
+    .img > img{
+        height: 500px;
+        width: 100%;
+        margin-right: 30px;
+        margin-bottom: 50px;
+    }
+
+    .img {
+        margin-bottom: 50px;
+    }
+
+    #grey-content-2 > h3 {
+        padding-top: 64px;
+        padding-left: 32px;
+        padding-bottom: 25px;
+    }
 }

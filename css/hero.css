@@ -55,7 +55,8 @@
     object-fit: cover;
     opacity: 1;
     animation: fade 10s ease-in;
-  }     
+  }   
+
   .diamond-back{
     margin-top: 60px;
     margin-left: 60px;
@@ -83,15 +84,30 @@
     margin: 18px auto;
     align-items: center;
   }
+
   .welcome-text{
     align-items: center;
     height: 50%;
     width: 100%;
     padding-left: 32px;
   }
-  .rhombus{
+
+  .rhombus {
     display: none;
   }
+
+  /* not perfect
+  .rhombus{
+    width: 55%;
+    height: 450px;
+    margin-left: 330px; 
+    margin-top: -120px;
+  }
+
+  .diamond-back, .diamond-front {
+    height: 380px;
+    width: 380px;
+  } */
 }
 
 

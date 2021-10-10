@@ -3,25 +3,15 @@
   margin:0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
-  font-family: 'IBMPlexSansBold', sans-serif;
   font-style: normal;
   font-size: 16px;
   color: black; 
   height:100%;
 
-}
-
-/*Our custom fonts i guess. Gotta find a better way*/
-@font-face {
-  font-family: IBMPlexSansBold;
-  src: url(../font/IBMPlexSans-Bold.ttf);
-}
-@font-face {
-  font-family: IBMPlexSansReg;
-  src: url(../font/IBMPlexSans-Regular.ttf);
 }
 
 /*Highlights in texts*/
@@ -42,7 +32,6 @@ body {
 
 /*Have a look at our projects! text*/
 h3 {
-  font-family:  "IBMPlexSansBold";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -52,7 +41,6 @@ h3 {
 }
 
 h4 {
-  font-family:  "IBMPlexSansBold";
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -61,10 +49,8 @@ h4 {
   text-align: left;
 }
 
-/* projects and services headings use kri isko bd mein check krk kaatna hoga shaid */
 .text{
   text-align: center;
-  font-family: "IBMPlexSansBold";
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -73,11 +59,8 @@ h4 {
   color: #000000;
 }
 
-
 /*About us texts*/
 .p-text, .list {
-
-  font-family: "IBMPlexSansBold";
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -163,6 +146,17 @@ img {
 /* project, service button ends */
 
 /* about + values + team + services starts */
+#grey-content-1 {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  row-gap: 1em;
+  column-gap: 5em;
+  height: auto;
+}
+
 #about-values, #team-services {
   position: relative;
   width: calc(100%-64px);
@@ -201,21 +195,8 @@ img {
 }
 /* about + values + team + services ends */
 
-#grey-content-1 {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  row-gap: 1em;
-  column-gap: 5em;
-  height: auto;
-}
-
 
 /*  ------------------------------------------------------------------------------------  */
-
-
 
 
 /* footer starts */
@@ -249,36 +230,44 @@ img {
 
 /* ipads */
 @media screen and (max-width: 992px) {
-  main {
-    margin: 18px auto;
-    align-items: center;
-    margin-top: 36vh;
-
+  /*  first grey starts  */
+  #grey-content-1 {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    column-gap: 0;
-    row-gap: 0.5em;
-  }
-  #who-are-we, #our-team, #our-values {
-    align-items: center;
-    width: 100%;
-    padding-left: 32px;
   }
 
-  #service-container, #contact-container {
+  #team-services, #about-values {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+
+  #who-are-we {
+    padding-bottom: 60px;
+  }
+
+  #our-team , #our-values {
+    padding-bottom: 0;
+  }
+
+  #services-container {
+    position: relative;
+    text-align: left;
+    padding-bottom: 40px;
+    padding-left: 32px;
     width: 100%;
-    padding-left: 32px;
+    height: auto;
+    margin-top: 0;
   }
-  
-  #service-container > button, 
-  #contact-container > button {
-    padding-left: 32px;
-  }
+  /*  first grey ends  */
 }
 
 /* phones */
 @media screen and (max-width: 576px) {
-
+  body {
+    background-color: antiquewhite;
+  }
+  
   main {
     align-items: center;
     margin-top: 40vh;

@@ -1,16 +1,4 @@
-
-/*Our custom fonts i guess. Gotta find a better way*/
-@font-face {
-  font-family: IBMPlexSansBold;
-  src: url(../font/IBMPlexSans-Bold.ttf);
-}
-@font-face {
-  font-family: IBMPlexSansReg;
-  src: url(../font/IBMPlexSans-Regular.ttf);
-}
-
 /* nav starts */
-
 
 
 /*Sticky Header*/
@@ -41,7 +29,6 @@
   }
   
   #company-name {
-    font-family: IBMPlexSansReg;
     font-size: 18px;
     text-decoration: none;
     color: black;
@@ -73,9 +60,7 @@
   
   }
   
-  
   .nav-right > li > a {
-    font-family: IBMPlexSansReg;
     font-size: 18px;
     text-decoration: none;
     color: black;
