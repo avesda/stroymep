@@ -112,7 +112,7 @@
 
 
 /* phones */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 670px) {
   .hero{
     align-items: center;
   }
