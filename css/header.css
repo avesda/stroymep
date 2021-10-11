@@ -31,7 +31,7 @@
   #company-name {
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: #212427;
     font-weight: 600;
     cursor: pointer;
   }
@@ -63,7 +63,7 @@
   .nav-right > li > a {
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: #212427;
     font-weight: 600;
   }
 
