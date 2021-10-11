@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Favicon-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
-  <link rel="manifest" href="/ico/site.webmanifest">
-  <link rel="mask-icon" href="/ico/safari-pinned-tab.svg" color="#0093e9">
-  <link rel="shortcut icon" href="/ico/favicon.ico">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-config" content="/ico/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--CSS Imports-->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/hero.css">
-  <link rel="stylesheet" href="css/projects.css">
-  <link rel="stylesheet" href="css/services.css">
-  <link rel="stylesheet" href="css/contact.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="manifest" href="/ico/site.webmanifest">
+    <link rel="mask-icon" href="/ico/safari-pinned-tab.svg" color="#0093e9">
+    <link rel="shortcut icon" href="/ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/ico/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
-  <!--JS Imports-->
-  <script src="js/index.js"></script>
-  <script src="js/spyscroll.js"></script>
-  <title>Stroymep | Mep | Engineering </title>
+    <!--CSS Imports-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/contact.css">
 
-  <!--Font Import-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--JS Imports-->
+    <script src="js/index.js"></script>
+    <script src="js/spyscroll.js"></script>
+    <title>Stroymep | Mep | Engineering </title>
 
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+  </head>
 
-<body id="home">
-  <div class="header" >
-    <nav id='nav'>
-      <div class="nav-left">
-        <img id="logo" src="svg/logo.svg" onclick="window.location='index.html'">
-        <a href="index.html" id="company-name">Stroymep</a>
+  <body id="home">
+    <div class="header" >
+      <nav id='nav'>
+        <div class="nav-left">
+          <img id="logo" src="svg/logo.svg" onclick="window.location='index.html'">
+          <a href="index.html" id="company-name">Stroymep</a>
 
-      </div>
+        </div>
 
-      <ul class="nav-right">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact us</a></li>
-      </ul>
+        <ul class="nav-right">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
 
 
-      <div class="burger" onclick="ToggleBurger(this)">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
+        <div class="burger" onclick="ToggleBurger(this)">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
     </div>
     <!-- welcome area -->
     <section class="hero">
@@ -766,6 +765,9 @@
           </div>
         </div>
       </section>
+
+    </section>
+
     <!-- ------------------------------------------------------------------------------------  -->
     <!-- services -->
   <section class="grey-bg" class="grey" id="services" >
@@ -872,61 +874,59 @@
     </footer>
 
 
-   <!-- sliders script -->
-  <script>
-    var slider = document.getElementsByClassName('slider'),
-      sliderItems = document.getElementsByClassName('items'),
-      prev = document.getElementsByClassName('control prev'),
-      next = document.getElementsByClassName('control next');
+    <!-- sliders script -->
+    <script>
+      var slider = document.getElementsByClassName('slider'),
+        sliderItems = document.getElementsByClassName('items'),
+        prev = document.getElementsByClassName('control prev'),
+        next = document.getElementsByClassName('control next');
 
-    var number = 21;
-    var x = 0;
-    for (x; x < number; x++) {
-      slide(slider[x], sliderItems[x], prev[x], next[x]);
-    }
-  </script>
-
-  <!-- diamond script -->
-  <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var slides1 = document.getElementsByClassName("mySlides1");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        slides1[i].style.display = "none";
+      var number = 21;
+      var x = 0;
+      for (x; x < number; x++) {
+        slide(slider[x], sliderItems[x], prev[x], next[x]);
       }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex - 1].style.display = "block";
-      slides1[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 10000); // Change image every 2 seconds
-    }
+    </script>
 
-    // Sticky Header script
+    <!-- diamond script -->
+    <script>
+      var slideIndex = 0;
+      showSlides();
 
-    window.onscroll = function () { scrollFunction(); spyscroll(); };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 84 || document.documentElement.scrollTop > 84) {
-        document.getElementById("logo").style.height = '62px';
-        document.getElementById("logo").style.width = '62px';
-        document.getElementById("logo").style.padding = '5px';
-        document.getElementById("logo").style.marginRight = '10px';
-        document.getElementById("company-name").style.fontSize = '18px';
-
-      } else {
-        document.getElementById("logo").style.height = '108px';
-        document.getElementById("logo").style.width = '108px';
-        document.getElementById("logo").style.padding = '15px';
-        document.getElementById("logo").style.marginRight = '0px';
-        document.getElementById("company-name").style.fontSize = '20px';
-
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var slides1 = document.getElementsByClassName("mySlides1");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          slides1[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        slides1[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 10000); // Change image every 2 seconds
       }
-    }
-  </script>
+
+      // Sticky Header script
+
+      window.onscroll = function () { scrollFunction(); spyscroll(); };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 84 || document.documentElement.scrollTop > 84) {
+          document.getElementById("logo").style.height = '62px';
+          document.getElementById("logo").style.width = '62px';
+          document.getElementById("logo").style.padding = '5px';
+          document.getElementById("logo").style.marginRight = '10px';
+        } else {
+          document.getElementById("logo").style.height = '108px';
+          document.getElementById("logo").style.width = '108px';
+          document.getElementById("logo").style.padding = '15px';
+          document.getElementById("logo").style.marginRight = '0px';
+          
+        }
+      }
+    </script>
   </body>
+
 </html>
