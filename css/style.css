@@ -3,25 +3,16 @@
   margin:0px;
   padding: 0px;
   box-sizing: border-box;
+  color: #212427;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
-  font-family: 'IBMPlexSansBold', sans-serif;
   font-style: normal;
   font-size: 16px;
-  color: black; 
+  color: #212427; 
   height:100%;
 
-}
-
-/*Our custom fonts i guess. Gotta find a better way*/
-@font-face {
-  font-family: IBMPlexSansBold;
-  src: url(../font/IBMPlexSans-Bold.ttf);
-}
-@font-face {
-  font-family: IBMPlexSansReg;
-  src: url(../font/IBMPlexSans-Regular.ttf);
 }
 
 /*Highlights in texts*/
@@ -42,48 +33,45 @@ body {
 
 /*Have a look at our projects! text*/
 h3 {
-  font-family:  "IBMPlexSansBold";
   font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
+  font-weight: 600;
+  font-size: 38px;
   line-height: 131.19%;
-  color: #000000;
+  color: #212427;
   text-align: left;
 }
 
 h4 {
-  font-family:  "IBMPlexSansBold";
+  font-weight: 500;
   font-style: normal;
-  font-weight: bold;
   font-size: 26px;
   line-height: 131.19%;
-  color: #000000;
+  color: #212427;
   text-align: left;
 }
 
 /* projects and services headings use kri isko bd mein check krk kaatna hoga shaid */
 .text{
   text-align: center;
-  font-family: "IBMPlexSansBold";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 32px;
-  line-height: 131.19%;
+  line-height: 125%;
   text-align: center;
-  color: #000000;
+  color: #212427;
 }
 
 
 /*About us texts*/
-.p-text, .list {
-
-  font-family: "IBMPlexSansBold";
+.p-text, .list li {
+  padding: 10px 10px 0 0;
   font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 150%;   /* or 33px */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;   /* or 33px */
   color: #5C5C5C;
 }
+
 
 .button{
   font-style: normal;
@@ -145,7 +133,7 @@ img {
 
 #project-button > button:hover{
   transition: 0.8s;
-  background: #000000;
+  background: #212427;
 }
 
 #service-button > button {

@@ -1,14 +1,3 @@
-
-/*Our custom fonts i guess. Gotta find a better way*/
-@font-face {
-  font-family: IBMPlexSansBold;
-  src: url(../font/IBMPlexSans-Bold.ttf);
-}
-@font-face {
-  font-family: IBMPlexSansReg;
-  src: url(../font/IBMPlexSans-Regular.ttf);
-}
-
 /* nav starts */
 
 
@@ -20,6 +9,7 @@
     top:0;
     position: sticky;
     align-items: center;
+    padding-bottom: 0;
     z-index: 5;
   }
   #nav {
@@ -41,11 +31,10 @@
   }
   
   #company-name {
-    font-family: IBMPlexSansReg;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
     text-decoration: none;
-    color: black;
-    font-weight: 600;
+    color: #212427;
     cursor: pointer;
   }
   
@@ -75,10 +64,10 @@
   
   
   .nav-right > li > a {
-    font-family: IBMPlexSansReg;
+    line-height: 98%;
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: #212427;
     font-weight: 600;
   }
 

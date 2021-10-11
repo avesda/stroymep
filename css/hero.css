@@ -15,6 +15,7 @@
   }
   
   .welcome-text{
+    font-weight: 700;
     padding-left: 32px;
     margin-top: 28px;
     display: flex;
@@ -23,7 +24,6 @@
     width: 45%;
     height: inherit;
     line-height: 98%;
-    font-family: "IBMPlexSansBold";
     font-style: normal;
     font-size: 55px;
     margin-bottom: 5px;

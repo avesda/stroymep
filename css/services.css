@@ -1,14 +1,15 @@
-#grey-content-2 {
-    padding-top: 64px;
+#grey-content-2 {   
+
     max-width: 1100px;
     margin: 0 auto;
     height: auto;
+    
 }
   
 #grey-content-2 > h3 {
     padding-top: 64px;
     padding-left: 32px;
-    padding-bottom: 25px;
+    padding-bottom: 32px;
 }
   
 .list-image {
