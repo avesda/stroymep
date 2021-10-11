@@ -9,7 +9,7 @@
 body {
   font-style: normal;
   font-size: 16px;
-  color: black; 
+  color: #212427; 
   height:100%;
 
 }
@@ -36,7 +36,7 @@ h3 {
   font-weight: bold;
   font-size: 36px;
   line-height: 131.19%;
-  color: #000000;
+  color: #212427;
   text-align: left;
 }
 
@@ -45,7 +45,7 @@ h4 {
   font-weight: bold;
   font-size: 26px;
   line-height: 131.19%;
-  color: #000000;
+  color: #212427;
   text-align: left;
 }
 
@@ -56,13 +56,13 @@ h4 {
   font-size: 32px;
   line-height: 131.19%;
   text-align: center;
-  color: #000000;
+  color: #212427;
 }
 
 /*About us texts*/
-.p-text, .list {
+.p-text, .list li{
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 22px;
   line-height: 150%;   /* or 33px */
   color: #5C5C5C;
@@ -128,7 +128,7 @@ img {
 
 #project-button > button:hover{
   transition: 0.8s;
-  background: #000000;
+  background: #212427;
 }
 
 #service-button > button {
