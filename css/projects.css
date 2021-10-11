@@ -1,6 +1,8 @@
 #projects{
   max-width: 1100px;
   margin: 0 auto;
+  height:auto;
+  margin-bottom: 108px;
 }
 
 #projects-anchor, #completed-projects{
@@ -33,7 +35,7 @@
 .boxframe {
 
     position: absolute;
-    border: 1px solid #000000;
+    border: 1px solid #212427;
     z-index: 0;
     width: 350px;
     height: 300px;
@@ -49,7 +51,7 @@
     font-weight: bold;
     font-size: 26px;
     line-height: 34px;
-    color: #000000;
+    color: #212427;
     position: absolute;
     left: 54px;
 }
@@ -81,7 +83,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 19px;
-    color: #000000;
+    color: #212427;
 }
 
 .subtitle {
@@ -101,7 +103,7 @@
     font-size: 48px;
     line-height: 62px;
     position: relative;
-    color: #000000;
+    color: #212427;
 }
 
 
