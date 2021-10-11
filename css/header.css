@@ -1,7 +1,6 @@
 /* nav starts */
 
 
-
 /*Sticky Header*/
   .header{
     overflow-anchor: none;
@@ -61,7 +60,6 @@
     list-style: none;
   
   }
-  
   
   .nav-right > li > a {
     line-height: 98%;
