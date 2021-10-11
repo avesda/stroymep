@@ -194,11 +194,11 @@
 @media screen and (max-width: 992px) {
   .card{
     margin: 0 auto;
-    zoom: 0.8;
+    zoom: 0.65;
   }
 }
   
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 670px) {
   
   #heading{
     padding-left: 32px;
@@ -207,5 +207,9 @@
   .card{
     zoom: 0.85;
     grid-column: 1;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
