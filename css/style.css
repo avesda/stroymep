@@ -3,14 +3,13 @@
   margin:0px;
   padding: 0px;
   box-sizing: border-box;
-  color: #212427;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
   font-style: normal;
   font-size: 16px;
-  color: #212427; 
+  color: black; 
   height:100%;
 
 }
@@ -34,42 +33,40 @@ body {
 /*Have a look at our projects! text*/
 h3 {
   font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
+  font-weight: bold;
+  font-size: 36px;
   line-height: 131.19%;
-  color: #212427;
+  color: #000000;
   text-align: left;
 }
 
 h4 {
-  font-weight: 500;
   font-style: normal;
+  font-weight: bold;
   font-size: 26px;
   line-height: 131.19%;
-  color: #212427;
+  color: #000000;
   text-align: left;
 }
 
 .text{
   text-align: center;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 32px;
-  line-height: 125%;
+  line-height: 131.19%;
   text-align: center;
-  color: #212427;
+  color: #000000;
 }
 
 /*About us texts*/
-.p-text, .list li {
-  padding: 10px 10px 0 0;
+.p-text, .list {
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 130%;   /* or 33px */
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 150%;   /* or 33px */
   color: #5C5C5C;
 }
-
 
 .button{
   font-style: normal;
@@ -131,7 +128,7 @@ img {
 
 #project-button > button:hover{
   transition: 0.8s;
-  background: #212427;
+  background: #000000;
 }
 
 #service-button > button {

@@ -133,8 +133,9 @@
     }
     
     .black {
+        font-family: 'IBM Plex Sans', sans-serif;
         font-weight: normal;
-        color: #212427;
+        color: black;
         font-size: 22px;
         padding: 5px;
         padding-bottom: 10px;
