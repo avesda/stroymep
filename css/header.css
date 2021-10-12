@@ -19,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 8vh;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
   }
   
   .nav-left {
@@ -108,7 +108,7 @@
   }
 
 }/* phones */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 666px) {
   .nav-right {
     position: absolute;
     right: 0px;
@@ -128,8 +128,10 @@
     cursor: pointer;
   }  
   .nav-right.open {
+    margin-top: 15px;
+    margin-right: 10px;
     display: block;
     z-index: 3;
-    background-color: white;
+    background-color: transparent;
   }
 }

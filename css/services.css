@@ -15,16 +15,42 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-left: 32px;
-    padding-bottom: 100px;
+    object-fit: cover;
+    height: 560px;
+    margin: 72px 72px 36px;
 }
   
 .img {
-    height: 500px;
-    width: 100%;
     padding-right: 30px;
+    height: inherit;
 }
   
+.service-img{
+    margin-right: 18px;
+    border-radius: 16px;
+    height: inherit;
+    width: 360px;
+    object-fit: cover;
+}
+
+.list-image-projects {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    object-fit: cover;
+    height: 360px;
+    margin: 72px 72px 36px;
+}
+
+
+#project-img{
+    margin-right: 18px;
+    height: 360px;
+    width: 360px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
 #project-manage {
     padding-left: 32px;
     padding-bottom: 100px;
@@ -37,20 +63,106 @@
 
 /*RESPONSIVE*/
 @media screen and (max-width: 992px) {
+
+    /*Project Management Only*/
+    .list-image-projects {
+        flex-direction: column;
+        height: auto;
+        margin-left: 18px;
+    }
+    #project-img{
+        margin-right: 0px;
+        height: 180px;
+        width: 400px;
+        border-radius: 16px;
+    }
+    #service-text-2, #headService{
+        margin-left: 6px;
+    }
+    #headService{
+        margin-left: 6px;
+        margin-top: 12px;
+    }
+
+    /*Mech and Electr.*/
+
     .list-image {
         flex-direction: column;
+        height: auto;
+        margin-left: 18px;
+    }
+    .service-img{
+        margin-right: 0px;
+        border-radius: 16px;
+        height: 180px;
+        width: 400px;
     }
 
-    .img > img{
-        height: 500px;
-        width: 100%;
-        margin-right: 30px;
-        margin-bottom: 50px;
+    .list{
+        margin-left: 18px;
+        padding-top: 12px;
+        padding-left: 6px;
     }
 
-    .img {
-        margin-bottom: 50px;
+
+    #grey-content-2 > h3 {
+        padding-top: 64px;
+        padding-left: 32px;
+        padding-bottom: 25px;
     }
+}
+
+
+
+
+
+/*RESPONSIVE MOBILE*/
+@media screen and (max-width: 576px) {
+
+    .p-text{
+        font-size: 18px;
+    }
+    /*Project Management Only*/
+    .list-image-projects {
+        flex-direction: column;
+        height: auto;
+    }
+    #project-img{
+        margin-right: 0px;
+        height: 180px;
+        width: 180px;
+        border-radius: 16px;
+    }
+    #service-text-2, #headService{
+        margin-left: 6px;
+    }
+    #headService{
+        margin-left: 6px;
+        margin-top: 12px;
+    }
+
+    /*Mech and Electr.*/
+
+    .list-image {
+        flex-direction: column;
+        height: auto;
+    }
+    .service-img{
+        margin-right: 0px;
+        border-radius: 16px;
+        height: 180px;
+        width: 180px;
+    }
+
+    .list{
+        margin-left: 18px;
+        padding-left: 6px;
+    }
+
+    .list li{
+        font-size: 18px;
+    }
+
 
     #grey-content-2 > h3 {
         padding-top: 64px;

@@ -78,6 +78,18 @@
 
   /*RESPONSIVE*/
 
+@media screen and (max-width: 1260px){
+
+
+  .front-welcome-images,.back-welcome-images{
+    zoom:0.8;
+  }
+  
+}
+
+
+
+
 /* ipads */
 @media screen and (max-width: 992px) {
   .hero{
@@ -87,6 +99,7 @@
 
   .welcome-text{
     align-items: center;
+    margin-top: 64px;
     height: 50%;
     width: 100%;
     padding-left: 32px;
@@ -95,6 +108,8 @@
   .rhombus {
     display: none;
   }
+
+  
 
   /* not perfect
   .rhombus{
@@ -117,7 +132,7 @@
     align-items: center;
   }
   .welcome-text{
-    font-size: 50px;
+    font-size: 46px;
     width: 100%;
     padding-left: 18px;
   }

@@ -87,14 +87,6 @@ h4 {
 }
 /* padding-right: 72px; in project/contact/service container if problem with alignment   */
 
-
-/*For general images*/
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 /* project , serivce button starts */
 #project-container, #service-container{  
   position: relative;
@@ -244,10 +236,12 @@ img {
 
   #who-are-we {
     padding-bottom: 60px;
+    padding-right: 18px;
   }
 
   #our-team , #our-values {
     padding-bottom: 0;
+    padding-right: 18px;
   }
 
   #services-container {
@@ -286,7 +280,20 @@ img {
     padding-left: 18px;
     padding-right: 18px;
   }
-   
+  #service-text {
+    padding-left: 0;
+  }   
+
+  #project-text{
+    padding-left: 18px;
+  }
+  #project-button{
+    padding-left: 18px;
+  }
+  #service-button{
+    padding-left: 0;
+  }
+
   #service-container > button, 
   #contact-container > button {
     padding-left: 18px;
