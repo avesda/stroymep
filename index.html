@@ -162,7 +162,7 @@
             <h3 class="text" id="service-text">Take a look at our complete list of services</h3>
 
             <div id="service-button">
-              <button type="button" class="button" onclick="window.location ='pages/projects.html'">
+              <button type="button" class="button" onclick="window.location ='#services'">
                 Services
               </button>
             </div>
@@ -774,19 +774,23 @@
     <!-- ------------------------------------------------------------------------------------  -->
     <!-- services -->
   <section class="grey-bg" class="grey" id="services" >
-    <section id="grey-content-2" style="padding-top: 64px;">
-        <h3>Services we provide</h3>
+    <section id="grey-content-2" style="padding-top: 64px; padding-bottom: 76px;">
+        <h3>Services that<br> we provide</h3>
 
-        <div id="project-manage">
-          <h4>Project Management</h4>
-          <p class="p-text"  style="padding-top: 15px; padding-bottom: 15px;">Developing custom system solutions tailored to your needs, maximizing energy efficiency and minimizing construction cost.</p>
-        </div>
         
+        <div class="list-image-projects" >
+          <div class="img"><img id="project-img" src="img/project.jpg"></img></div>
+          <div>
+          <h4 id="headService">Project Management</h4>
+          <p class="p-text" id="service-text-2" style="padding-top: 15px; padding-bottom: 15px;">Developing custom system solutions tailored to your needs, maximizing energy efficiency and minimizing construction cost.</p>
+        </div>
+      </div>
+      
         <div class="list-image">
           <div class="img"><img class="service-img" src="img/image 19.png"></img></div>
           <div>
-            <h4>Mechanical Engineering</h4>
-            <p class="p-text"  style="padding-top: 15px; padding-bottom: 15px;">We develop custom heating, ventilation, and air conditioning systems (HVAC). HVAC’s goal is to provide thermal <span class="highlight-blue">comfort</span> and <span class="highlight-blue">excellent</span> indoor air quality.
+            <h4 id="headService">Mechanical Engineering</h4>
+            <p class="p-text" id="service-text-2" style="padding-top: 15px; padding-bottom: 15px;">We develop custom heating, ventilation, and air conditioning systems (HVAC). HVAC’s goal is to provide thermal <span class="highlight-blue">comfort</span> and <span class="highlight-blue">excellent</span> indoor air quality.
               <ul class="list">
                 <li>Heating, Ventilating & Air Conditioning (HVAC) systems
                 <li>Exhaust systems</li>
@@ -796,8 +800,6 @@
                 <li>Natatorium dehumidification</li>
                 <li>Dessicant dehumidification</li>
                 <li>Lab fume hood, airflow & monitoring systems</li>
-                <li>Heat recovery</li>
-                <li>Ground loop water source heat pumps</li>
               </ul>
             </p>
           </div>
@@ -806,8 +808,8 @@
         <div class="list-image">
           <div class="img"> <img class="service-img" src="img/image 20.png"></img></div>
           <div>
-            <h4>Electrical Engineering</h4>
-            <p class="p-text" style="padding-top: 15px; padding-bottom: 15px;">One of the most complex tasks in designing a building is developing the electrical circuitry, yet our solutions are <span class="highlight-blue">simple</span> and <span class="highlight-blue">effective</span>. We develop:
+            <h4 id="headService">Electrical Engineering</h4>
+            <p class="p-text" id="service-text-2" style="padding-top: 15px; padding-bottom: 15px;">One of the most complex tasks in designing a building is developing the electrical circuitry, yet our solutions are <span class="highlight-blue">simple</span> and <span class="highlight-blue">effective</span>. We develop:
                 <ul class="list">
                   <li>Power distribution systems
                   <li>Interior & Exterior lighting</li>
@@ -860,7 +862,7 @@
       </div>
 
       <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6516.576261575891!2d33.02407600000001!3d35.249087!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb9377d682c0cd2c8!2zT0RUw5wgS3V6ZXkgS8SxYnLEsXMgS2FtcHVzdQ!5e0!3m2!1sen!2sus!4v1633868430284!5m2!1sen!2sus" width="1100" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d885.2353545251219!2d71.43796567545355!3d51.130160104717824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841d53cfc033%3A0x8f5cb6be819b520f!2sDinmukhamed%20Qonayev%20St%2035%2F1%2C%20Nur-Sultan%20020000%2C%20Kazakhstan!5e0!3m2!1sen!2str!4v1634063065868!5m2!1sen!2str" width="1100" height="600" style="border:16px;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       
     </section>
@@ -913,20 +915,48 @@
       window.onscroll = function () { scrollFunction(); spyscroll(); };
 
       function scrollFunction() {
-        if (document.body.scrollTop > 84 || document.documentElement.scrollTop > 84) {
+
+        if(window.screen.width<552)
+        {
+          if (document.body.scrollTop > 84 || document.documentElement.scrollTop > 84) {
+          document.getElementById("logo").style.height = '46px';
+          document.getElementById("logo").style.width = '46px';
+          document.getElementById("logo").style.padding = '5px';
+          document.getElementById("logo").style.marginRight = '5px';
+          document.getElementById("logo").style.marginLeft = '5px';
+          document.getElementById("company-name").style.fontSize = '18px';
+          } else {
+          document.getElementById("logo").style.height = '82px';
+          document.getElementById("logo").style.width = '82px';
+          document.getElementById("logo").style.padding = '15px';
+          document.getElementById("logo").style.marginRight = '0px';
+          document.getElementById("logo").style.marginLeft = '0px';
+          document.getElementById("company-name").style.fontSize = '20px';
+          
+          }
+        }else if(window.screen.width>992){
+          if (document.body.scrollTop > 84 || document.documentElement.scrollTop > 84) {
           document.getElementById("logo").style.height = '62px';
           document.getElementById("logo").style.width = '62px';
           document.getElementById("logo").style.padding = '5px';
           document.getElementById("logo").style.marginRight = '10px';
           document.getElementById("company-name").style.fontSize = '18px';
-        } else {
+          } else {
           document.getElementById("logo").style.height = '108px';
           document.getElementById("logo").style.width = '108px';
           document.getElementById("logo").style.padding = '15px';
           document.getElementById("logo").style.marginRight = '0px';
           document.getElementById("company-name").style.fontSize = '20px';
           
+          }
         }
+        else{
+          document.getElementById("logo").style.height = '62px';
+          document.getElementById("logo").style.width = '62px';
+          document.getElementById("logo").style.marginLeft = '10px';
+        }
+
+        
       }
     </script>
   </body>
