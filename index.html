@@ -39,11 +39,11 @@
   </head>
 
   <body id="home">
-    <div class="header" >
+    <div class="header" id="headerID" >
       <nav id='nav'>
         <div class="nav-left">
-          <img id="logo" src="svg/logo.svg" onclick="window.location='index.html'">
-          <a href="index.html" id="company-name">Stroymep</a>
+          <img id="logo" src="svg/logo.svg" onclick="window.location='/'">
+          <a href="/" id="company-name">Stroymep</a>
 
         </div>
 
@@ -183,8 +183,6 @@
             <div id="slider" class="slider">
               <div class="wrapper">
                 <div id="items" class="items">
-                  <span class="slide"><img src="img/petropavl2.jpeg" loading="lazy" id="img-project"
-                      alt="Petropavlovsk City Hospital"></span>
                   <span class="slide"><img src="img/petropavl1.jpeg" loading="lazy" id="img-project"
                       alt="Petropavlovsk City Hospital"></span>
                   <span class="slide"><img src="img/petrpavl3.png" loading="lazy" id="img-project"
@@ -775,11 +773,11 @@
     <!-- services -->
   <section class="grey-bg" class="grey" id="services" >
     <section id="grey-content-2" style="padding-top: 64px; padding-bottom: 76px;">
-        <h3>Services that we provide</h3>
+        <h3>Services we provide</h3>
 
         
         <div class="list-image-projects" >
-          <div class="img"><img id="project-img" src="img/project.jpg"></img></div>
+          <div class="img"><img id="project-img" src="img/mep3.jpg"></img></div>
           <div>
           <h4 id="headService">Project Management</h4>
           <p class="p-text" id="service-text-2" style="padding-top: 15px; padding-bottom: 15px;">Developing custom system solutions tailored to your needs, maximizing energy efficiency and minimizing construction cost.</p>
@@ -787,7 +785,7 @@
       </div>
       
         <div class="list-image">
-          <div class="img"><img class="service-img" src="img/image 19.png"></img></div>
+          <div class="img"><img class="service-img" src="img/hvac3.jpg"></img></div>
           <div>
             <h4 id="headService">Mechanical Engineering</h4>
             <p class="p-text" id="service-text-2" style="padding-top: 15px; padding-bottom: 15px;">We develop custom heating, ventilation, and air conditioning systems (HVAC). HVAC’s goal is to provide thermal <span class="highlight-blue">comfort</span> and <span class="highlight-blue">excellent</span> indoor air quality.
@@ -806,7 +804,7 @@
         </div>
 
         <div class="list-image">
-          <div class="img"> <img class="service-img" src="img/image 20.png"></img></div>
+          <div class="img"> <img class="service-img" src="img/electric.jpg"></img></div>
           <div>
             <h4 id="headService">Electrical Engineering</h4>
             <p class="p-text" id="service-text-2" style="padding-top: 15px; padding-bottom: 15px;">One of the most complex tasks in designing a building is developing the electrical circuitry, yet our solutions are <span class="highlight-blue">simple</span> and <span class="highlight-blue">effective</span>. We develop:
@@ -853,8 +851,8 @@
       </section>
 
       <div id="linked-in">
-        <a href="#">
-          <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="https://www.linkedin.com/company/too-stroymep">
+          <svg width="45" height="45" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M60.2017 0H4.79826C3.52569 0 2.30523 0.505531 1.40538 1.40538C0.505531 2.30523 0 3.52569 0 4.79826V60.2017C0 61.4743 0.505531 62.6948 1.40538 63.5946C2.30523 64.4945 3.52569 65 4.79826 65H60.2017C61.4743 65 62.6948 64.4945 63.5946 63.5946C64.4945 62.6948 65 61.4743 65 60.2017V4.79826C65 3.52569 64.4945 2.30523 63.5946 1.40538C62.6948 0.505531 61.4743 0 60.2017 0ZM19.3736 55.3719H9.60104V24.3299H19.3736V55.3719ZM14.4806 20.0281C13.372 20.0219 12.2902 19.6874 11.3716 19.0669C10.453 18.4464 9.73873 17.5677 9.31904 16.5417C8.89935 15.5156 8.793 14.3883 9.01342 13.3019C9.23383 12.2154 9.77113 11.2187 10.5575 10.4373C11.3439 9.65598 12.3441 9.1251 13.4319 8.91166C14.5197 8.69823 15.6463 8.81182 16.6697 9.23809C17.693 9.66435 18.5671 10.3842 19.1817 11.3068C19.7963 12.2294 20.1238 13.3133 20.1229 14.4219C20.1334 15.164 19.9943 15.9007 19.714 16.588C19.4337 17.2753 19.0179 17.8991 18.4913 18.4223C17.9648 18.9454 17.3383 19.3572 16.6493 19.6331C15.9602 19.909 15.2226 20.0433 14.4806 20.0281ZM55.3944 55.399H45.6264V38.4403C45.6264 33.4389 43.5004 31.8951 40.7559 31.8951C37.858 31.8951 35.0142 34.0799 35.0142 38.5667V55.399H25.2417V24.3524H34.6396V28.6542H34.766C35.7094 26.7448 39.0135 23.4813 44.0556 23.4813C49.5083 23.4813 55.399 26.7177 55.399 36.1969L55.3944 55.399Z" fill="#0A66C2"/>
           </svg>
         </a>
@@ -912,13 +910,28 @@
 
       // Sticky Header script
 
-      window.onscroll = function () { scrollFunction(); spyscroll(); };
+      let scrolling = false;
+
+      window.onscroll = () => {
+          scrolling = true;
+      };
+
+      setInterval(() => {
+          if (scrolling) {
+              scrolling = false;
+              scrollFunction(); 
+          }
+      },800);
+
+
+      //window.onscroll = function () {scrollFunction(); spyscroll();  };
 
       function scrollFunction() {
 
         if(window.screen.width<552)
         {
-          if (document.body.scrollTop > 84 || document.documentElement.scrollTop > 84) {
+          if (document.body.scrollTop >= 84.0 || document.documentElement.scrollTop >= 84.0) {
+          document.getElementById("headerID").style.height = '54px';
           document.getElementById("logo").style.height = '46px';
           document.getElementById("logo").style.width = '46px';
           document.getElementById("logo").style.padding = '5px';
@@ -926,37 +939,40 @@
           document.getElementById("logo").style.marginLeft = '5px';
           document.getElementById("company-name").style.fontSize = '18px';
           } else {
+            window.scrollTo(0,0);
+          document.getElementById("headerID").style.height = '90px';
           document.getElementById("logo").style.height = '82px';
           document.getElementById("logo").style.width = '82px';
           document.getElementById("logo").style.padding = '15px';
           document.getElementById("logo").style.marginRight = '0px';
           document.getElementById("logo").style.marginLeft = '0px';
           document.getElementById("company-name").style.fontSize = '20px';
-          
           }
         }else if(window.screen.width>992){
-          if (document.body.scrollTop > 84 || document.documentElement.scrollTop > 84) {
+          if (document.body.scrollTop >= 84.0 || document.documentElement.scrollTop >= 84.0) {
+          document.getElementById("headerID").style.height = '70px';
           document.getElementById("logo").style.height = '62px';
           document.getElementById("logo").style.width = '62px';
           document.getElementById("logo").style.padding = '5px';
           document.getElementById("logo").style.marginRight = '10px';
           document.getElementById("company-name").style.fontSize = '18px';
           } else {
+          window.scrollTo(0,0);
+          document.getElementById("headerID").style.height = '116px';
           document.getElementById("logo").style.height = '108px';
           document.getElementById("logo").style.width = '108px';
           document.getElementById("logo").style.padding = '15px';
           document.getElementById("logo").style.marginRight = '0px';
           document.getElementById("company-name").style.fontSize = '20px';
-          
           }
         }
         else{
+          document.getElementById("headerID").style.height = '70px';
           document.getElementById("logo").style.height = '62px';
           document.getElementById("logo").style.width = '62px';
           document.getElementById("logo").style.marginLeft = '10px';
         }
 
-        
       }
     </script>
   </body>

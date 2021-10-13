@@ -26,12 +26,14 @@
   }
   
   #linked-in {
+    align-items: center;
     display: flex;
     padding-left:32px;
     padding-top: 70px;
   }
   
   #linked-in > p{
+    
     padding: 10px;
     padding-top: 0px;
     width: 55%;

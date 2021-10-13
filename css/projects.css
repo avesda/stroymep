@@ -234,9 +234,20 @@
   }
   .card{
     margin: 0 auto;
+    zoom: 1.1;
+  }
+}
+@media screen and (max-width: 500px) {
+  #heading{
+    padding-left: 32px;
+    font-size: 36px;
+  }
+  .card{
+    margin: 0 auto;
     zoom: 0.85;
   }
 }
+
 
 @media screen and (max-width: 396px) {
   #heading{
