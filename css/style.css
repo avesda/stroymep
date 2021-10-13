@@ -258,10 +258,6 @@ h4 {
 
 /* phones */
 @media screen and (max-width: 576px) {
-  body {
-    background-color: antiquewhite;
-  }
-  
   main {
     align-items: center;
     margin-top: 40vh;

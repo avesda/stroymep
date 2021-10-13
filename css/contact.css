@@ -33,35 +33,16 @@
   
   #linked-in > p{
     padding: 10px;
+    padding-top: 0px;
     width: 55%;
   }
   
   #map {
     width: 1100px;
-    padding: 40px 0;
+    margin: 40px 0;
   }
 
-/* map starts 
-#map-responsive{
-    overflow:hidden;
-    padding-bottom:40%;
-    position:relative;
-    height:0;
-    width: calc(100%-64px);
-    max-width: 1110px;
-    margin: 100px auto;
-    position: relative;
-    padding-left: 72px;
-}
 
-#map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-/* map ends */
 
 /*RESPONSIVE*/
 
@@ -69,6 +50,7 @@
 @media screen and (max-width: 1099px) {
     #map {
         width: 98%;
+        margin-left: 10px;
     }
 
     #map > iframe {
@@ -78,60 +60,13 @@
 
 /* phones */
 @media screen and (max-width: 576px) {
+  #map {
+    width: 98%;
+    margin-left: 10px;
+  }
 
-    #socials {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1.5fr);
-        row-gap: 0.5em;
-        width: calc(100%-64px);
-        max-width: 1110px;
-        margin: 100px auto;
-        margin-bottom: 10px;
-        height: auto;
-        position: relative;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    
-    #socials > div {
-        padding: 5px;
-        text-align: left;
-    }
-
-    i {
-        font-size: 40px;
-        color: #005CB9;
-        padding: 10px;
-    }
-    
-    .black {
-        font-weight: normal;
-        color: #212427;
-        font-size: 22px;
-        padding: 5px;
-        padding-bottom: 10px;
-    }
-
-    #map-responsive{
-        overflow:hidden;
-        padding-bottom:40%;
-        position:relative;
-        height: 324px;
-        width: calc(100%-64px);
-        max-width: 1110px;
-        margin: 50px 50px;
-        position: relative;
-        padding-left: 72px;
-        z-index: 0;
-    }
-    
-    #map-responsive iframe{
-        left:0;
-        top:0;
-        height: 100%;
-        width: 100%;
-        position:absolute;
-        z-index: 0;
-    }
+  #map > iframe {
+    width: inherit;
+    height: 400px;
+  }
 }
