@@ -328,6 +328,34 @@
         </div>
 
         <div class="card">
+          <h2 id="project-name">Holiday Inn Hotel</h2>
+          <div class="project-image">
+            <div id="slider" class="slider">
+              <div class="wrapper">
+                <div id="items" class="items">
+                  <span class="slide"><img src="img/HolidayInn.png" loading="lazy" id="img-project"
+                      alt="Holiday Inn Hotel"></span>
+                  <span class="slide"><img src="img/HolidayInn2.png" loading="lazy" id="img-project"
+                      alt="Holiday Inn Hotel"></span>
+                  <span class="slide"><img src="img/HolidayInn3.png" loading="lazy" id="img-project"
+                      alt="Holiday Inn Hotel"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxframe">
+          </div>
+          <div class="slider-controls">
+            <a id="prev" class="control prev"></a>
+            <a id="next" class="control next"></a>
+          </div>
+          <div class="sub-text">
+            <p class="subtitle">Atyrau, Kazakhstan</p>
+            <p class="status">Completed in 2020</p>
+          </div>
+        </div>
+
+        <div class="card">
           <h2 id="project-name">Nazarbayev Center</h2>
           <div class="project-image">
             <div id="slider" class="slider">
@@ -920,7 +948,7 @@
         prev = document.getElementsByClassName('control prev'),
         next = document.getElementsByClassName('control next');
 
-      var number = 22;
+      var number = 23;
       var x = 0;
       for (x; x < number; x++) {
         slide(slider[x], sliderItems[x], prev[x], next[x]);
