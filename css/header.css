@@ -112,7 +112,7 @@
   }
 
 }/* phones */
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 700px) {
   .nav-right {
     position: absolute;
     right: 0px;
