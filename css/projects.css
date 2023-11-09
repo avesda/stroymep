@@ -8,6 +8,15 @@
   padding-top: 64px;
 }
 
+#projects-and-download{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pdf-icon {
+  padding-top: 64px;
+}
 
 /*CARD*/
 
