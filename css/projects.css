@@ -68,6 +68,7 @@
 .project-image{
     margin: 50px auto;
     width: 488px;
+    max-width: calc(100% - 24px);
     height: 270px;
     z-index: 2;
     position: absolute;
@@ -75,8 +76,8 @@
 
 #img-project
 {
-    width: 488px;
-    height: 270px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: var(--radius-sm);
 }
@@ -296,6 +297,7 @@
   .card{
     margin: 0 auto;
     width: 480px;
+    max-width: calc(100vw - 32px);
     height: 380px;
   }
   .cards{
@@ -309,26 +311,108 @@
     padding-left: 32px;
     font-size: 36px;
   }
+  #projects-anchor {
+    font-size: 24px;
+    padding-left: 18px;
+  }
   .card{
     margin: 0 auto;
-    width: 380px;
-    height: 320px;
+    width: calc(100vw - 32px);
+    max-width: 380px;
+    height: 300px;
+  }
+  .project-image {
+    margin: 44px auto;
+    width: 340px;
+    max-width: calc(100% - 24px);
+    height: 185px;
+  }
+  .slider {
+    width: 340px;
+    max-width: 100%;
+    height: 185px;
+  }
+  .slide {
+    width: 340px;
+    height: 185px;
+  }
+  .cards {
+    grid-template-columns: none;
+  }
+  #project-name {
+    font-size: 20px;
+    left: 16px;
+  }
+  .sub-text {
+    height: 65px;
+    left: 16px;
+  }
+  .subtitle {
+    font-size: 12px;
+  }
+  .area {
+    font-size: 11px;
+  }
+  .status {
+    font-size: 11px;
+  }
+  .slider-controls {
+    height: 65px;
+    right: 16px;
+  }
+  .control {
+    width: 44px;
+    height: 32px;
   }
 }
 
 
 @media screen and (max-width: 396px) {
-  #heading{
-    padding-left: 32px;
-    font-size: 36px;
-  }
   .card{
-    width: 320px;
-    height: 280px;
+    width: calc(100vw - 32px);
+    max-width: 320px;
+    height: 270px;
     grid-column: 1;
   }
-  .cards{
-    width: auto;
-    grid-template-columns: none;
+  .project-image {
+    margin: 40px auto;
+    width: 280px;
+    max-width: calc(100% - 24px);
+    height: 165px;
+  }
+  .slider {
+    width: 280px;
+    max-width: 100%;
+    height: 165px;
+  }
+  .slide {
+    width: 280px;
+    height: 165px;
+  }
+  #project-name {
+    font-size: 18px;
+    left: 12px;
+  }
+  .sub-text {
+    height: 55px;
+    left: 12px;
+  }
+  .subtitle {
+    font-size: 11px;
+  }
+  .area {
+    font-size: 10px;
+  }
+  .status {
+    font-size: 10px;
+  }
+  .slider-controls {
+    height: 55px;
+    right: 12px;
+  }
+  .control {
+    width: 40px;
+    height: 28px;
+    border-radius: 14px;
   }
 }

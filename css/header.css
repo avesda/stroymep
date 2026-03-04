@@ -5,7 +5,7 @@
   .header{
 
     overflow-anchor: none;
-    overflow: hidden;
+    overflow: visible;
     background-color: var(--color-bg);
     top:0;
     position: sticky;
@@ -159,6 +159,9 @@
     display: block;
     margin-right: 19px;
     cursor: pointer;
+  }
+  #theme-toggle {
+    margin-right: 0;
   }
   .nav-right.open {
     margin-top: 15px;

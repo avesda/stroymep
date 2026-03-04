@@ -62,14 +62,25 @@
 
 /* phones */
 @media screen and (max-width: 576px) {
+  #contact > h3 {
+    padding-left: 18px;
+    font-size: 24px;
+  }
+  #contact-info {
+    padding-left: 18px;
+    width: 100%;
+    column-gap: 2em;
+  }
+  #linked-in {
+    padding-left: 18px;
+  }
   #map {
     width: 98%;
     margin-left: 10px;
   }
-
   #map > iframe {
     width: inherit;
-    height: 400px;
+    height: 300px;
   }
 }
 
