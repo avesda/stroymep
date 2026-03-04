@@ -72,3 +72,8 @@
     height: 400px;
   }
 }
+
+/* dark mode map */
+[data-theme="dark"] #map iframe {
+  filter: invert(0.9) hue-rotate(180deg);
+}

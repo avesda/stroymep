@@ -75,6 +75,14 @@
   }
   
   
+  .hero-highlight {
+    color: var(--color-primary);
+  }
+
+  [data-theme="dark"] .hero-highlight {
+    color: #60A5FA;
+  }
+
   /* Hero Section Ends */
 
   /*RESPONSIVE*/

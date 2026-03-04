@@ -61,6 +61,10 @@
         </ul>
 
 
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+          <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
+        </button>
+
         <div class="burger" onclick="ToggleBurger(this)">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -72,7 +76,7 @@
     <section class="hero">
       <div class="welcome-text">
         <p>Команда<br>
-          <span style="color:#0000AD"> Экспертов</span><br>
+          <span class="hero-highlight"> Экспертов</span><br>
           в сфере MEP <br>проектировании.
         </p>
       </div>
@@ -993,7 +997,7 @@
     <footer>
       <div class="footer-container">
         <div class="footer-company-name">
-          <h2 class="footer-company-name-h2">Stroymep 2023 ©</h2>
+          <h2 class="footer-company-name-h2">Stroymep 2026 ©</h2>
         </div>
       </div>
     </footer>
@@ -1099,6 +1103,35 @@
         }
 
       }
+    </script>
+
+    <script>
+      function getPreferredTheme() {
+        var saved = localStorage.getItem('theme');
+        if (saved) return saved;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        var icon = document.getElementById('theme-icon');
+        icon.setAttribute('fill', theme === 'dark' ? 'currentColor' : 'none');
+      }
+
+      function toggleTheme() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', next);
+        applyTheme(next);
+      }
+
+      applyTheme(getPreferredTheme());
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        if (!localStorage.getItem('theme')) {
+          applyTheme(e.matches ? 'dark' : 'light');
+        }
+      });
     </script>
   </body>
 
