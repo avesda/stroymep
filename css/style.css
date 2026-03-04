@@ -1,3 +1,19 @@
+:root {
+  --color-primary: #2563EB;
+  --color-primary-dark: #1E40AF;
+  --color-accent: #0284C7;
+  --color-text: #1E293B;
+  --color-text-secondary: #64748B;
+  --color-bg-grey: #F8FAFC;
+  --color-white: #FFFFFF;
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.1), 0 12px 28px rgba(0,0,0,0.08);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --transition: 0.25s ease;
+}
+
 *{
   scroll-behavior: smooth;
   margin:0px;
@@ -9,68 +25,67 @@
 body {
   font-style: normal;
   font-size: 16px;
-  color: #212427; 
+  color: var(--color-text);
   height:100%;
 }
 
 /*Highlights in texts*/
 .highlight-blue {
-  color: #005CB9;
+  color: var(--color-primary);
 }
 
-/*Backgroud Tricks from Rumessa*/
+/*Background sections*/
 .grey-bg {
-  /*CANDIDATE 1:  background-color: #e2eeff;*/
-  background-color: #fafafa;
+  background-color: var(--color-bg-grey);
   height: auto;
-  width: calc(100%-64px);
+  width: calc(100% - 64px);
 }
 .grey {
-  width: calc(100%-64px);
+  width: calc(100% - 64px);
 }
 
 /*Have a look at our projects! text*/
 h3 {
   font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
+  font-weight: 700;
+  font-size: 32px;
   line-height: 131.19%;
-  color: #212427;
+  color: var(--color-text);
   text-align: left;
 }
 
 h4 {
   font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
+  font-weight: 700;
+  font-size: 24px;
   line-height: 131.19%;
-  color: #212427;
+  color: var(--color-text);
   text-align: left;
 }
 
 .text{
   text-align: center;
   font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
+  font-weight: 700;
+  font-size: 30px;
   line-height: 131.19%;
   text-align: center;
-  color: #212427;
+  color: var(--color-text);
 }
 
 /*About us texts*/
 .p-text, .list li{
   font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 150%;   /* or 33px */
-  color: #5C5C5C;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 170%;
+  color: var(--color-text-secondary);
 }
 
 .button{
   font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 131.19%;
 
   color: #FFFFFF;
@@ -81,15 +96,22 @@ h4 {
   width: 217px;
   height: 49px;
   display: block;
-  border-radius: 24.5px;
+  border-radius: 28px;
   border-color: transparent;
+  transition: all var(--transition);
 }
+
+.button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
 /* padding-right: 72px; in project/contact/service container if problem with alignment   */
 
 /* project , serivce button starts */
-#project-container, #service-container{  
+#project-container, #service-container{
   position: relative;
-  width: calc(100%-64px);
+  width: calc(100% - 64px);
   max-width: 1100px;
   margin: 64px auto;
   height: auto;
@@ -114,16 +136,19 @@ h4 {
 }
 
 #project-button > button {
-  background: #0000AD;
+  background: var(--color-primary);
 }
 
 #project-button > button:hover{
-  transition: 0.8s;
-  background: #212427;
+  background: var(--color-primary-dark);
 }
 
 #service-button > button {
-  background: #0093E9;
+  background: var(--color-accent);
+}
+
+#service-button > button:hover{
+  background: var(--color-primary);
 }
 
 #project-text, #service-text {
@@ -150,7 +175,7 @@ h4 {
 
 #about-values, #team-services {
   position: relative;
-  width: calc(100%-64px);
+  width: calc(100% - 64px);
   max-width: 1110px;
   margin: 64px auto;
   height: auto;
@@ -174,12 +199,17 @@ h4 {
 }
 
 #our-team > p > a {
-  color: #5C5C5C;
+  color: var(--color-text-secondary);
   text-decoration: none;
   cursor: pointer;
+  transition: color var(--transition);
 }
 
-#about-values > #who-are-we > h3, 
+#our-team > p > a:hover {
+  color: var(--color-primary);
+}
+
+#about-values > #who-are-we > h3,
 #about-values > #our-values > h3,
 #team-services > #our-team > h3{
   margin: 20px 0;
@@ -193,7 +223,7 @@ h4 {
 /* footer starts */
 .footer-container {
   margin: 48px auto;
-  width: calc(100%-64px);
+  width: calc(100% - 64px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -264,7 +294,7 @@ h4 {
     grid-template-rows: repeat(6, 1fr);
     column-gap: 0;
     row-gap: 0.5em;
-  } 
+  }
   #who-are-we, #our-team, #our-values {
     width: 100%;
     padding-left: 18px;
@@ -277,7 +307,7 @@ h4 {
   }
   #service-text {
     padding-left: 0;
-  }   
+  }
 
   #project-text{
     padding-left: 18px;
@@ -289,11 +319,8 @@ h4 {
     padding-left: 0;
   }
 
-  #service-container > button, 
+  #service-container > button,
   #contact-container > button {
     padding-left: 18px;
   }
 }
-
-
-
